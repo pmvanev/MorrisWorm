@@ -1,0 +1,202 @@
+\section*{Outline}
+
+%% This is the real outline I'll use as a writing guide
+
+\begin{enumerate}
+\item Abstract
+\item Introduction
+	\begin{itemize}
+	\item background/context
+    	\begin{itemize}
+        \item birth and growth of internet
+        \item early internet use and perception
+        \item resulting emergent cyber threats
+        \end{itemize}
+	\item layout rest of paper
+	\end{itemize}
+\item Outbreak
+	\begin{itemize}
+    \item intro
+	\item Nov 1988 - release/discovery
+    \item symptoms
+    \item how many infected
+    \item Morris' friend anonymous email
+    \item what researchers did to stop it
+    	\begin{itemize}
+    	\item sh soln.
+        \item software patches
+        \item mailing list
+        \item quarantined email solutions
+        \item disassembly and analysis ***(transition into next section)
+    	\end{itemize}
+	\end{itemize}
+\item Anatomy
+	\begin{itemize}
+    \item Defense
+    	\begin{itemize}
+        	\item Camouflage
+            	\begin{itemize}
+        		\item disk clean up
+                \item encrypted image
+                \item name change to sh
+                \item fork() for new pid
+            	\end{itemize}
+            \item magic number authentication
+            \item persistence (1 in 7 becomes unkillable)
+        \end{itemize}
+    \item Reproduction
+		\begin{itemize}
+		\item rsh/rexec exploit
+ 	    \item fingerd exploit
+ 	    \item sendmail exploit
+ 	    \item detecting itself
+        \item coinflip for self termination and immortality 
+		\end{itemize}
+    \item password cracking
+    	\begin{itemize}
+    	\item common words and permutations
+        \item unix dictionary
+        \item other stuff
+    	\end{itemize}
+    \item bugs, mistakes, omissions
+    	\begin{itemize}
+        \item checks for good return values
+        \item pass struct instead of pointer to struct
+        \item UDP to ernie over TCP connection, never sent
+        \item accidental leftover files in /tmp (of compilation too slow?)
+        \item joke about bug fixes in worm
+        \item other stuff pointed out by Spaf
+        \end{itemize}
+    \item unused features- could have been much worse... ***(transition into next section)
+    \item conclusion
+	\end{itemize}
+\item Aftermath
+	\begin{itemize}
+    \item intro
+	\item Perception and awareness
+		\begin{itemize}
+		\item of the research community
+        	\begin{itemize}
+			\item virus vs. worm terminology
+			\item need for better passwords
+			\item hashing algorithm
+            \item this was too easy and it could have been much worse
+           	\end{itemize}
+		\item of the general public
+           	\begin{itemize}
+   			\item Internet becomes widely know technology
+            \item cybercrime becomes more well known (at the same time... what a coincidence)
+            \item Genius computer whiz?
+            	\begin{itemize}
+            		\item researchers: NO	
+            		\item public: Yes	
+            	\end{itemize}
+            \item Is Morris a criminal?
+            	\begin{itemize}
+                \item yes, fire and brimstone (some researchers)
+                \item yes, but don't punish too harshly (Cornell Commission and others)
+                \item no, just a mistaken experiment
+                \item no, he's a hero for demonstrating security flaws (transition to next section: blaming the victim)
+                \item the real question - should accidents/experiments be considered crimes?
+            	\end{itemize}
+           	\end{itemize}
+            \item Who is at fault: administrators vs. vendors
+		\item computer security as a legitimate field
+        	\begin{itemize}
+        	\item tons of publications
+            \item questions about security design principles (like least privilege)
+            \item questions about ethics and law ***(transition to next section)
+        	\end{itemize}
+		\end{itemize}
+	\item prosecution under CFAA
+    	\begin{itemize}
+    	\item Morris' claim that it was unintentional... "knowingly" vs "intentionally"	.. accident
+    	\item Morris' claim that he didn't gain ungranted access because he had access to Cornell computers
+    	\item Precedent: the internet falls under CFAA
+        \item Question: what if worm hadn't infected government computer?
+    	\end{itemize}
+    \item crisis response protocol
+    	\begin{itemize}
+    	\item formation of CERT at CMU
+    	\item phage mailing list
+    	\end{itemize}
+    \item conclusion
+    \end{itemize}
+\item Influence
+	\begin{itemize}
+    \item intro
+    \item other demonstrations of exploits
+   		\begin{itemize}
+   		\item email as a spread mechanism
+        \item attacking weak passwords
+        \item concept of use to spread other attacks  
+   		\end{itemize} 
+    \item Other worms it inspired and how
+		\begin{itemize}
+        \item Code Red
+        \item Slammer
+        \item Probably others... Nimbda, Stuxnet? etc... (I found mention but no substantive, concrete comparison)
+		\end{itemize}
+	\item long term influence on perception
+    	\begin{itemize}
+        \item new vulnerabilities and attacks on same old vectors for same old reasons ***(transition)
+    	\item with new worms, people still saying the same thing in the aftermath
+    	\item there isn't much question now: cybercriminals are criminals, not admirable geniuses or heros
+    	\item there isn't much question now: we blame the victim... both of them. 
+              Admins and vendors point fingers at eachother, following the Morris Worm trend
+    	\end{itemize}
+	\item Long term influence in formal cyber security and cyber crime
+    	\begin{enumerate}
+        \item CFAA still being expanded to deal with criminals like Morris
+        \item CERT still handling real crises, like the newer ones mentioned above
+        \item CIRT is a commonly studied and applied topic
+    	\end{enumerate}
+    \item conclusion
+	\end{itemize}
+\item Conclusion
+	\begin{itemize}
+	\item what this paper covered
+	\item synthesize/speculate
+   		\begin{itemize}
+   		\item what else could have happened?
+        \item if not for this worm, would something else have taken its place? probably, and it could have been meaner
+        \item was the overall impact positive, negative, or neutral?... neutral to positive
+        \item are Morris and other's like him brilliant? Not even in his day, and definitely not today... kiddies
+        \item How have worm driven attacks evolved? (not by much honestly, they just spread faster)
+        \item How has public perception of attacks shifted? - as far as blame, not much. as far as idolozing, very much
+        \item How has prosecution of cybercrime changed over time? - still a cat and mouse came between technology and legislation
+   		\end{itemize} 
+	\end{itemize}
+\end{enumerate}
+
+
+%% This is the modified, shortened outline for the midway submission
+
+\begin{enumerate}
+\item \textbf{Introduction} \\
+This section will provide some background. In particular, it will briefly address the birth and growth of the internet, how it was used and perceived early on, and resulting emergent cyber threats. This section will then introduce the Morris Worm and map out the rest of the paper. 
+
+\item \textbf{Outbreak} \\
+This section will walk the reader through the outbreak of the worm. It will relate \textit{what} actually happened. It will discuss the release and discovery of the worm, symptoms of infected machines, rate and size of the infection, and finally, the containment and eradication of the worm. Accounts of immediate crisis response tactics employed by the research community will seed discussion about the worm's impact in later sections. 
+
+\item \textbf{Anatomy} \\
+This section will dissect the worm and analyze its anatomy. It will relate \textit{how} the worm worked. Discussion topics will include target host machines and their vulnerabilities, exploits used by the worm to spread itself, the worm's life cycle and activities, its intended behavior, and unanticipated behaviors that lead to the crisis. The Morris Worm's anatomy will be exhibited in enough detail to spur a discussion of its influence on future worms and cyber attacks in subsequent sections.
+  
+\item \textbf{Aftermath} \\
+This section will discuss the short to mid term impact of the Morris Worm crisis. Discussion topics will include software vulnerability patches, cyber security legislation, resulting research and publications, the formation of the CERT at CMU, and general public perception and awareness of cyber crime. It will point out groundbreaking events that occurred during or immediately after the Morris Worm crisis, including Robert Morris' prosecution under the Computer Fraud and Abuse Act and the formation of the CERT at CMU.
+
+\item \textbf{Influence} \\
+This section will discuss mid to long term impacts of the Morris Worm. Discussion topics may include other worms and exploits inspired by the Morris Worm, software security principles influenced by the Morris Worm, longterm drift in cyber security awareness and perception, and continued research and legislation.   
+
+\item \textbf{Conclusion} \\
+This section will briefly recapitulate the topics and theme of the paper. It will then further discuss the impact of the Morris Worm. Questions addressed may include:
+	\begin{enumerate}
+	\item Was the overall impact positive, negative, or neutral?
+    \item Are Morris and others like him brilliant? deviant? both?
+    \item How have worm driven cyber attacks evolved over time? A lot? Not much?
+    \item How has public perception of cyber attacks changed over time? A lot? Not much?
+    \item How has public perception of the Morris Worm incident changed over time?
+    \item How has public perception of Robert Morris changed over time?
+    \item How has prosecution of cyber crime changed over time? A lot? Not much?
+	\end{enumerate}
+\end{enumerate}
