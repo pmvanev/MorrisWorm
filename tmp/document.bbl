@@ -1,15 +1,35 @@
-\begin{thebibliography}{15}
+\begin{thebibliography}{22}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
+\bibitem[Adams(1996)]{adams_controlling_1996}
+Jo-Ann~M. Adams.
+\newblock Controlling cyberspace: applying the computer fraud and abuse act to
+  the internet.
+\newblock \emph{Santa Clara Computer \& High Tech. LJ}, 12:\penalty0 403, 1996.
+
+\bibitem[Bailey et~al.(2005)Bailey, Cooke, Jahanian, and
+  Watson]{bailey_blaster_2005}
+M.~Bailey, E.~Cooke, F.~Jahanian, and D.~Watson.
+\newblock The {Blaster} {Worm}: {Then} and {Now}.
+\newblock \emph{IEEE Security Privacy}, 3\penalty0 (4):\penalty0 26--31, July
+  2005.
+\newblock ISSN 1540-7993.
+\newblock \doi{10.1109/MSP.2005.106}.
+
 \bibitem[Berghel(2001)]{berghel_code_2001}
 Hal Berghel.
 \newblock The code red worm.
 \newblock \emph{Communications of the ACM}, 44\penalty0 (12):\penalty0 15--19,
   2001.
+
+\bibitem[Coffin(2003)]{coffin_slammer_2003}
+B.~Coffin.
+\newblock Slammer worm exploits risk management lapses.
+\newblock \emph{Risk Reporter}, 2003.
 
 \bibitem[Eichin and Rochlis(1989)]{eichin_microscope_1989}
 Mark~W. Eichin and Jon~A. Rochlis.
@@ -26,10 +46,15 @@ Ted Eisenberg, David Gries, Juris Hartmanis, Don Holcomb, M.~Stuart Lynn, and
 \newblock \emph{Communications of the ACM}, 32\penalty0 (6):\penalty0 706--709,
   1989.
 
+\bibitem[Fisher(2001)]{fisher_code_2001}
+Dennis Fisher.
+\newblock Code {Red} worm exposes security flaws.
+\newblock \emph{eWeek}, 18\penalty0 (29):\penalty0 1, July 2001.
+\newblock ISSN 15306283.
+
 \bibitem[Fisher(2002)]{fisher_living_2002}
 Dennis Fisher.
-\newblock {LIVING} {WITH} {WORMS}, {VIRUSES} {AND} {DAILY} {SECURITY} {ALERTS}.
-  (cover story).
+\newblock Living with worms, viruses, and daily security alerts.
 \newblock \emph{eWeek}, 19\penalty0 (6):\penalty0 20, February 2002.
 \newblock ISSN 15306283.
 
@@ -47,30 +72,45 @@ Phillip~E. Gardner.
 \newblock ISSN 0167-4048.
 \newblock \doi{10.1016/0167-4048(89)90092-8}.
 
-\bibitem[Hinden et~al.(1983)Hinden, Haverty, and Sheltzer]{hinden_darpa_1983}
-R.~Hinden, J.~Haverty, and A.~Sheltzer.
-\newblock The {DARPA} {Internet}: {Interconnecting} {Heterogeneous} {Computer}
-  {Networks} with {Gateways}.
-\newblock \emph{Computer}, 16\penalty0 (9):\penalty0 38--48, September 1983.
-\newblock ISSN 0018-9162.
-\newblock \doi{10.1109/MC.1983.1654494}.
-
-\bibitem[Kelty(2010)]{Christopher_Kelty}
-Christopher Kelty.
-\newblock The {Morris} {Worm}.
-\newblock \emph{Limn}, December 2010.
-
-\bibitem[Lee(2013)]{lee_how_2013}
-Timothy~B. Lee.
+\bibitem[Lee(2013)]{lee_washpost_2013}
+T.~Lee.
 \newblock How a grad student trying to build the first botnet brought the
-  {Internet} to its knees.
-\newblock \emph{Washington Post}, November 2013.
-\newblock ISSN 0190-8286.
+  {Internet} to its knees - {The} {Washington} {Post}.
+\newblock \emph{The Washington Post}, 2013.
 
 \bibitem[Marsan(2008)]{marsan_morris_2008}
 Carolyn~Duffy Marsan.
 \newblock Morris worm turns 20: {Look} what it's done.
 \newblock \emph{Network World}, October 2008.
+
+\bibitem[Moore(2001)]{moore_cm_2001}
+Cathleen Moore.
+\newblock {CM} targets {Web} services.
+\newblock \emph{InfoWorld}, 23\penalty0 (32):\penalty0 18, August 2001.
+\newblock ISSN 01996649.
+
+\bibitem[Moore et~al.(2003)Moore, Paxson, Savage, Shannon, Staniford, and
+  Weaver]{moore_inside_2003}
+D.~Moore, V.~Paxson, S.~Savage, C.~Shannon, S.~Staniford, and N.~Weaver.
+\newblock Inside the {Slammer} worm.
+\newblock \emph{IEEE Security Privacy}, 1\penalty0 (4):\penalty0 33--39, July
+  2003.
+\newblock ISSN 1540-7993.
+\newblock \doi{10.1109/MSECP.2003.1219056}.
+
+\bibitem[Panko(2003)]{panko_slammer:_2003}
+Raymond~R. Panko.
+\newblock Slammer: {The} first blitz worm.
+\newblock \emph{Communications of the Association for Information Systems},
+  11\penalty0 (1):\penalty0 12, 2003.
+
+\bibitem[Schultz(2003)]{schultz_security_2003}
+Eugene Schultz.
+\newblock Security views.
+\newblock \emph{Computers \& Security}, 22\penalty0 (3):\penalty0 176--187,
+  April 2003.
+\newblock ISSN 0167-4048.
+\newblock \doi{10.1016/S0167-4048(03)00302-X}.
 
 \bibitem[Seeley(1989)]{seeley_tour_1989}
 Donn Seeley.
@@ -97,8 +137,16 @@ Eugene~H. Spafford.
   446--468. Springer, 1989{\natexlab{c}}.
 
 \bibitem[Strawn(2014)]{strawn_masterminds_2014}
-George Strawn.
+G.~Strawn.
 \newblock Masterminds of the {Arpanet}.
-\newblock \emph{IT Professional}, 16\penalty0 (3):\penalty0 66--68, 2014.
+\newblock \emph{IT Professional}, 16\penalty0 (3):\penalty0 66--68, May 2014.
+\newblock ISSN 1520-9202.
+\newblock \doi{10.1109/MITP.2014.32}.
+
+\bibitem[Tynan(2003)]{tynan_dawn_2003}
+Daniel Tynan.
+\newblock Dawn of the {Superworm}.
+\newblock \emph{PCWorld}, 21\penalty0 (5):\penalty0 26, May 2003.
+\newblock ISSN 07378939.
 
 \end{thebibliography}

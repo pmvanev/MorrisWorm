@@ -4,50 +4,55 @@ The top-level auxiliary file: document.aux
 A level-1 auxiliary file: Abstract.aux
 A level-1 auxiliary file: Incubation.aux
 A level-1 auxiliary file: Outbreak.aux
-A level-1 auxiliary file: Anatomy.aux
+A level-1 auxiliary file: Dissection.aux
 A level-1 auxiliary file: Convalescence.aux
 A level-1 auxiliary file: Evolution.aux
 A level-1 auxiliary file: PostMortem.aux
 The style file: plainnat.bst
 Database file #1: References.bib
-You've used 15 entries,
+Warning--string name "april" is undefined
+--line 231 of file References.bib
+Warning--string name "november" is undefined
+--line 257 of file References.bib
+You've used 22 entries,
             2773 wiz_defined-function locations,
-            692 strings with 6881 characters,
-and the built_in function-call counts, 6294 in all, are:
-= -- 594
-> -- 239
-< -- 15
-+ -- 89
-- -- 72
-* -- 464
-:= -- 957
-add.period$ -- 53
-call.type$ -- 15
-change.case$ -- 69
-chr.to.int$ -- 13
-cite$ -- 30
-duplicate$ -- 326
-empty$ -- 586
-format.name$ -- 91
-if$ -- 1334
+            730 strings with 7612 characters,
+and the built_in function-call counts, 9148 in all, are:
+= -- 857
+> -- 365
+< -- 21
++ -- 135
+- -- 111
+* -- 694
+:= -- 1416
+add.period$ -- 82
+call.type$ -- 22
+change.case$ -- 103
+chr.to.int$ -- 20
+cite$ -- 44
+duplicate$ -- 467
+empty$ -- 839
+format.name$ -- 137
+if$ -- 1925
 int.to.chr$ -- 3
 int.to.str$ -- 1
-missing$ -- 15
-newline$ -- 89
-num.names$ -- 60
-pop$ -- 133
+missing$ -- 22
+newline$ -- 132
+num.names$ -- 88
+pop$ -- 185
 preamble$ -- 1
-purify$ -- 54
+purify$ -- 81
 quote$ -- 0
-skip$ -- 223
+skip$ -- 316
 stack$ -- 0
-substring$ -- 276
-swap$ -- 45
+substring$ -- 364
+swap$ -- 56
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 165
+type$ -- 242
 warning$ -- 0
-while$ -- 68
+while$ -- 98
 width$ -- 0
-write$ -- 212
+write$ -- 319
+(There were 2 warnings)

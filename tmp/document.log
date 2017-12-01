@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.24)  30 NOV 2017 20:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.24)  1 DEC 2017 16:57
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -422,7 +422,7 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 
 (./document.aux (./Abstract.aux) (./Incubation.aux) (./Outbreak.aux)
-(./Anatomy.aux) (./Convalescence.aux) (./Evolution.aux) (./PostMortem.aux))
+(./Dissection.aux) (./Convalescence.aux) (./Evolution.aux) (./PostMortem.aux))
 \openout1 = `document.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
@@ -675,15 +675,13 @@ Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              This could result in several error messages on input li
 ne 1.
 
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 6.
-(/usr/share/texmf/tex/latex/lm/omslmr.fd
-File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 6.
-) [1
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 31.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 31.
+[1
 
-]
+]) [2]
 \openout2 = `Outbreak.aux'.
 
  (./Outbreak.tex
@@ -706,6 +704,13 @@ ne 4.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/14.4'.
 (microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 7.
+(/usr/share/texmf/tex/latex/lm/omslmr.fd
+File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 7.
+
 
 Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              You've used the KOMA-Script implementation of \@ssect
@@ -714,13 +719,13 @@ Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              This could result in several error messages on input li
 ne 15.
 
-) [2
+) [3
 
 
 ]
-\openout2 = `Anatomy.aux'.
+\openout2 = `Dissection.aux'.
 
- (./Anatomy.tex
+ (./Dissection.tex
 
 Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              You've used the KOMA-Script implementation of \@ssect
@@ -761,7 +766,7 @@ Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              This could result in several error messages on input li
 ne 35.
 
-[3
+[4
 
 
 ]
@@ -773,7 +778,7 @@ Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              This could result in several error messages on input li
 ne 45.
 
-) [4]
+) [5]
 \openout2 = `Convalescence.aux'.
 
  (./Convalescence.tex
@@ -801,10 +806,10 @@ Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              This could result in several error messages on input li
 ne 39.
 
-[5
+[6
 
 
-]) [6]
+]) [7]
 \openout2 = `Evolution.aux'.
 
  (./Evolution.tex
@@ -832,10 +837,10 @@ Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              This could result in several error messages on input li
 ne 21.
 
-[7
+[8
 
 
-]) [8]
+]) [9]
 \openout2 = `PostMortem.aux'.
 
  (./PostMortem.tex
@@ -847,48 +852,39 @@ Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              This could result in several error messages on input li
 ne 1.
 
-) [9
+) [10
 
 
 ] (./document.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 23--28
+Underfull \hbox (badness 10000) in paragraph at lines 43--48
 [][]\T1/lmr/m/n/12 (+20) Ted
  []
 
+[11
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--57
-[][]\T1/lmr/m/n/12 (+20) R. Hin-den, J. Haverty, and
- []
-
-
-Underfull \hbox (badness 1609) in paragraph at lines 51--57
-\T1/lmr/m/n/12 (+20) A. Sheltzer.  The DARPA In-ter-net: In-ter-con-nect-ing He
-t-ero-ge-neous Com-
- []
-
-[10
-
-]) [11] (./document.aux (./Abstract.aux) (./Incubation.aux) (./Outbreak.aux) (.
-/Anatomy.aux) (./Convalescence.aux) (./Evolution.aux) (./PostMortem.aux)) ) 
+]) [12] (./document.aux (./Abstract.aux) (./Incubation.aux) (./Outbreak.aux) (.
+/Dissection.aux) (./Convalescence.aux) (./Evolution.aux) (./PostMortem.aux)) ) 
 Here is how much of TeX's memory you used:
- 9390 strings out of 494910
- 145014 string characters out of 6179836
- 322795 words of memory out of 5000000
- 12356 multiletter control sequences out of 15000+600000
- 75948 words of font info for 91 fonts, out of 8000000 for 9000
+ 9489 strings out of 494910
+ 146338 string characters out of 6179836
+ 322964 words of memory out of 5000000
+ 12394 multiletter control sequences out of 15000+600000
+ 95517 words of font info for 129 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  47i,11n,52p,797b,401s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/us
-r/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm
-/lm-mathsy.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/t
-exmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/
-lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/f
-onts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx1
-0.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb>
-Output written on document.pdf (14 pages, 153177 bytes).
+{
+/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips
+/lm/lm-mathsy.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/shar
+e/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/
+lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texm
+f/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.
+pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/ty
+pe1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb><
+/usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb>
+Output written on document.pdf (15 pages, 228840 bytes).
 PDF statistics:
- 80 PDF objects out of 1000 (max. 8388607)
- 56 compressed objects within 1 object stream
+ 95 PDF objects out of 1000 (max. 8388607)
+ 67 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 25089 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 29185 words of extra memory for PDF output out of 29859 (max. 10000000)
 

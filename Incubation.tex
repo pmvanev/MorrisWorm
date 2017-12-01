@@ -2,20 +2,75 @@
 \addcontentsline{toc}{section}{Incubation}
 \setcounter{page}{1}
 
-\begin{itemize}
-\item background/context
-	\begin{itemize}
-	\item birth and growth of the internet
-    \item early internet use and perception
-    \item beginnings of research into viruses and worms
-    \item exploration of vulnerabilities, particularly in unix
-    \item technical and characteristic unpreparedness for large-scale Morris Worm type attack ***(transition)
-	\end{itemize}
-\item layout rest of paper
-	\begin{itemize}
-	\item What is theme of this paper? How the Morris Worm helped bring us from point A (above) to point B (today)
-	\item What sections are in it?
-	\item What does each of these sections illustrate?
-	\end{itemize}
-\end{itemize}
+The Internet's massive size and popularity today make it hard to imagine its
+humble beginning. What we now know as the Internet began as a research project
+sponsored by the Defense Advanced Research Project Agency (DARPA) called the
+Arpanet. On the day of its birth in December, 1969, the Arpanet consisted of
+only four connected nodes: UCLA, SRI, UCSB, and the University of Utah. Lines
+of communication between these nodes were ``two million times slower than
+today's fastest networks'' \cite{strawn_masterminds_2014}. 
 
+The Arpanet opened the door for a flurry of new research projects. New ideas
+grew into numerous applications like file sharing, remote logon, and email. Soon, more
+nodes and networks were added. By the mid 1980s, the growth and success
+of the Arpanet prompted the National Science Foundation to build a network to
+connect research universities to some of its newly built supercomputer centers. 
+This new network came to be known as the NSFnet.
+It made internetworking ubiquitous amongst universities and researchers,
+eventually connecting ``more than 2,000 universities and colleges and a
+number of high tech companies'' \cite{strawn_masterminds_2014}. Ultimately, the
+1990s would see the NSFnet becoming commercialized into the Internet that we
+know today, but not without some growing pains. This paper focuses on one of the
+earliest and most vehement growing pains the developing internet\footnote
+{
+The above summary of the
+birth of the Internet used the names ``Arpanet'', ``NSFnet'', and ``Internet''
+for various stages in a growth of a widely connected network of computers. For
+simplicity, the rest of this paper will collectively refer to all of these
+stages as the ``internet''.
+} 
+would face,
+known initially as the ``Internet Worm'' and later as the ``Morris Worm''.
+
+
+An important detail in the internet's conception and early life is the
+attitude of its creators.
+This internet was developed by researchers focused on
+optimizing its efficiency, not its security. Some security
+measures were built in as an afterthought, but security was not woven into
+the core fabric of the internet or its applications. As the internet
+grew, researchers who used and designed
+it were generally assumed to have good intentions. According to
+\cite{lee_washpost_2013}, ``\ldots the Internet was like a small town where
+people thought little of leaving their doors unlocked. Internet security was
+seen as a mostly theoretical problem, and software vendors treated security
+flaws as a low priority.'' The same article quotes the sentiments of Dr. Eugene
+Spafford \footnote{
+Dr. Spafford is a computer security researcher and professor at Purdue
+University. He is also executive director of the Purdue's Center for Education
+and Research in Information Assurance and Security and an internationally
+recognized expert in computer security.}:
+
+\begin{quote}
+The majority of people had some tie to computation for their jobs. I wouldn't
+say that we trusted each other, but there was more a community sense of caring
+for the stability and appropriate use of the computing systems\ldots \\
+There was no such thing as a firewall back then. You didn't have people who were
+vandals or anarchists or criminals as much. 
+\end{quote}
+
+Thus, there was no perceived need for strong security. This very lack of
+security would ultimately provide a temperate environment for the incubation of
+a virulent infection: the Morris Worm.
+
+The remainder of this
+paper tunnels through the worm hole in history that the Morris Worm
+has left behind. First, it covers \textit{what} happened during the worm's
+outbreak and eradication. Second, it recounts the discoveries that were made
+by researchers about \textit{how} the worm works upon its dissection. Third,
+it discusses the \textit{immediate impact} that the worm had on the research
+community and the general public as they convalesced from the infection. Fourth,
+it traces the worm's \textit{long term influence} on the evolution of future
+worms and shifting cyber-security perspectives. Finally, the paper
+provides a post mortem synthesis on the quality and depth of the worm's overall
+impact on the history of computer security. 
