@@ -1,10 +1,19 @@
 \select@language {english}
 \contentsline {section}{Incubation}{1}
 \contentsline {section}{Outbreak}{2}
+\contentsline {subsection}{Black Thursday}{2}
+\contentsline {subsection}{Vaccination}{2}
 \contentsline {section}{Anatomy}{3}
+\contentsline {subsection}{Self Preservation}{3}
+\contentsline {subsection}{Reproduction}{3}
 \contentsline {subsection}{Password Cracking}{3}
-\contentsline {subsection}{Unused Features}{3}
-\contentsline {section}{Convalescence}{4}
-\contentsline {section}{Evolution}{5}
-\contentsline {section}{Post Mortem}{6}
-\contentsline {section}{\nonumberline References}{7}
+\contentsline {subsection}{Maladaptive Traits}{3}
+\contentsline {subsection}{Vestigial Organs}{4}
+\contentsline {section}{Convalescence}{5}
+\contentsline {subsection}{Awareness and Perception}{5}
+\contentsline {subsection}{Immune System Growth}{6}
+\contentsline {section}{Evolution}{7}
+\contentsline {subsection}{Descendants}{7}
+\contentsline {subsection}{Evolved Awareness and Perception}{7}
+\contentsline {section}{Post Mortem}{9}
+\contentsline {section}{\nonumberline References}{10}

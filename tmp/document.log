@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.24)  30 NOV 2017 18:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.24)  30 NOV 2017 20:02
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -421,9 +421,8 @@ File: pppdftex.def 2015/09/18 v0.5d Pdfpages driver for pdfTeX (AM)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 
-(./document.aux (./Abstract.aux) (./Outline.aux) (./Incubation.aux)
-(./Outbreak.aux) (./Anatomy.aux) (./Aftermath.aux) (./Influence.aux)
-(./Conclusion.aux))
+(./document.aux (./Abstract.aux) (./Incubation.aux) (./Outbreak.aux)
+(./Anatomy.aux) (./Convalescence.aux) (./Evolution.aux) (./PostMortem.aux))
 \openout1 = `document.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
@@ -439,7 +438,8 @@ LaTeX Font Info:    ... okay on input line 63.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
 LaTeX Font Info:    ... okay on input line 63.
 LaTeX Font Info:    Try loading font information for T1+lmr on input line 63.
- (/usr/share/texmf/tex/latex/lm/t1lmr.fd
+
+(/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 *geometry* driver: auto-detecting
@@ -642,27 +642,6 @@ Package microtype Info: Character `029' is missing
 ) [2
 
 ]
-\openout2 = `Outline.aux'.
-
- (./Outline.tex
-
-Class scrartcl Warning: incompatible usage of \@ssect detected.
-(scrartcl)              You've used the KOMA-Script implementation of \@ssect
-(scrartcl)              from within a non compatible caller, that does not
-(scrartcl)              \scr@s@ct@@nn@m@ locally.
-(scrartcl)              This could result in several error messages on input li
-ne 1.
-
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 9.
-(/usr/share/texmf/tex/latex/lm/omslmr.fd
-File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 9.
- [3
-
-
-] [4] [5] [6] [7] [8]) [9]
 
 Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              You've used the KOMA-Script implementation of \@ssect
@@ -675,14 +654,14 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 78
 .
 (./document.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 5.
+(Font)              <8> on input line 4.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 5.
+(Font)              <6> on input line 4.
 )
 \tf@toc=\write3
 \openout3 = `document.toc'.
 
- [10
+ [3
 
 ]
 \openout2 = `Incubation.aux'.
@@ -696,27 +675,18 @@ Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              This could result in several error messages on input li
 ne 1.
 
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 6.
+(/usr/share/texmf/tex/latex/lm/omslmr.fd
+File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 6.
 ) [1
 
 ]
 \openout2 = `Outbreak.aux'.
 
  (./Outbreak.tex
-
-Class scrartcl Warning: incompatible usage of \@ssect detected.
-(scrartcl)              You've used the KOMA-Script implementation of \@ssect
-(scrartcl)              from within a non compatible caller, that does not
-(scrartcl)              \scr@s@ct@@nn@m@ locally.
-(scrartcl)              This could result in several error messages on input li
-ne 1.
-
-) [2
-
-
-]
-\openout2 = `Anatomy.aux'.
-
- (./Anatomy.tex
 
 Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              You've used the KOMA-Script implementation of \@ssect
@@ -742,7 +712,22 @@ Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              from within a non compatible caller, that does not
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
 (scrartcl)              This could result in several error messages on input li
-ne 12.
+ne 15.
+
+) [2
+
+
+]
+\openout2 = `Anatomy.aux'.
+
+ (./Anatomy.tex
+
+Class scrartcl Warning: incompatible usage of \@ssect detected.
+(scrartcl)              You've used the KOMA-Script implementation of \@ssect
+(scrartcl)              from within a non compatible caller, that does not
+(scrartcl)              \scr@s@ct@@nn@m@ locally.
+(scrartcl)              This could result in several error messages on input li
+ne 1.
 
 
 Class scrartcl Warning: incompatible usage of \@ssect detected.
@@ -750,12 +735,45 @@ Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              from within a non compatible caller, that does not
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
 (scrartcl)              This could result in several error messages on input li
-ne 15.
+ne 5.
 
-) [3
+
+Class scrartcl Warning: incompatible usage of \@ssect detected.
+(scrartcl)              You've used the KOMA-Script implementation of \@ssect
+(scrartcl)              from within a non compatible caller, that does not
+(scrartcl)              \scr@s@ct@@nn@m@ locally.
+(scrartcl)              This could result in several error messages on input li
+ne 19.
+
+
+Class scrartcl Warning: incompatible usage of \@ssect detected.
+(scrartcl)              You've used the KOMA-Script implementation of \@ssect
+(scrartcl)              from within a non compatible caller, that does not
+(scrartcl)              \scr@s@ct@@nn@m@ locally.
+(scrartcl)              This could result in several error messages on input li
+ne 27.
+
+
+Class scrartcl Warning: incompatible usage of \@ssect detected.
+(scrartcl)              You've used the KOMA-Script implementation of \@ssect
+(scrartcl)              from within a non compatible caller, that does not
+(scrartcl)              \scr@s@ct@@nn@m@ locally.
+(scrartcl)              This could result in several error messages on input li
+ne 35.
+
+[3
 
 
 ]
+
+Class scrartcl Warning: incompatible usage of \@ssect detected.
+(scrartcl)              You've used the KOMA-Script implementation of \@ssect
+(scrartcl)              from within a non compatible caller, that does not
+(scrartcl)              \scr@s@ct@@nn@m@ locally.
+(scrartcl)              This could result in several error messages on input li
+ne 45.
+
+) [4]
 \openout2 = `Convalescence.aux'.
 
  (./Convalescence.tex
@@ -773,7 +791,7 @@ Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              from within a non compatible caller, that does not
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
 (scrartcl)              This could result in several error messages on input li
-ne 4.
+ne 8.
 
 
 Class scrartcl Warning: incompatible usage of \@ssect detected.
@@ -781,20 +799,12 @@ Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              from within a non compatible caller, that does not
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
 (scrartcl)              This could result in several error messages on input li
-ne 9.
+ne 39.
+
+[5
 
 
-Class scrartcl Warning: incompatible usage of \@ssect detected.
-(scrartcl)              You've used the KOMA-Script implementation of \@ssect
-(scrartcl)              from within a non compatible caller, that does not
-(scrartcl)              \scr@s@ct@@nn@m@ locally.
-(scrartcl)              This could result in several error messages on input li
-ne 10.
-
-) [4
-
-
-]
+]) [6]
 \openout2 = `Evolution.aux'.
 
  (./Evolution.tex
@@ -812,7 +822,7 @@ Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              from within a non compatible caller, that does not
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
 (scrartcl)              This could result in several error messages on input li
-ne 4.
+ne 13.
 
 
 Class scrartcl Warning: incompatible usage of \@ssect detected.
@@ -820,20 +830,12 @@ Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              from within a non compatible caller, that does not
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
 (scrartcl)              This could result in several error messages on input li
-ne 11.
+ne 21.
+
+[7
 
 
-Class scrartcl Warning: incompatible usage of \@ssect detected.
-(scrartcl)              You've used the KOMA-Script implementation of \@ssect
-(scrartcl)              from within a non compatible caller, that does not
-(scrartcl)              \scr@s@ct@@nn@m@ locally.
-(scrartcl)              This could result in several error messages on input li
-ne 19.
-
-) [5
-
-
-]
+]) [8]
 \openout2 = `PostMortem.aux'.
 
  (./PostMortem.tex
@@ -845,38 +847,48 @@ Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              This could result in several error messages on input li
 ne 1.
 
-) [6
+) [9
 
 
 ] (./document.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 23--28
+[][]\T1/lmr/m/n/12 (+20) Ted
+ []
 
-LaTeX Warning: Empty `thebibliography' environment or \BreakBibliography
-               before end of `thebibliography' environment on input line 8.
 
-) [7
+Underfull \hbox (badness 10000) in paragraph at lines 51--57
+[][]\T1/lmr/m/n/12 (+20) R. Hin-den, J. Haverty, and
+ []
 
-] (./document.aux (./Abstract.aux) (./Outline.aux) (./Incubation.aux)
-(./Outbreak.aux) (./Anatomy.aux) (./Convalescence.aux) (./Evolution.aux)
-(./PostMortem.aux)) ) 
+
+Underfull \hbox (badness 1609) in paragraph at lines 51--57
+\T1/lmr/m/n/12 (+20) A. Sheltzer.  The DARPA In-ter-net: In-ter-con-nect-ing He
+t-ero-ge-neous Com-
+ []
+
+[10
+
+]) [11] (./document.aux (./Abstract.aux) (./Incubation.aux) (./Outbreak.aux) (.
+/Anatomy.aux) (./Convalescence.aux) (./Evolution.aux) (./PostMortem.aux)) ) 
 Here is how much of TeX's memory you used:
- 9399 strings out of 494910
- 144959 string characters out of 6179836
- 322705 words of memory out of 5000000
- 12341 multiletter control sequences out of 15000+600000
- 76509 words of font info for 98 fonts, out of 8000000 for 9000
+ 9390 strings out of 494910
+ 145014 string characters out of 6179836
+ 322795 words of memory out of 5000000
+ 12356 multiletter control sequences out of 15000+600000
+ 75948 words of font info for 91 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 47i,11n,52p,797b,455s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share
-/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texmf/fonts/type1/public/lm
-/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/tex
-mf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr1
-7.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/font
-s/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.p
-fb>
-Output written on document.pdf (17 pages, 161030 bytes).
+ 47i,11n,52p,797b,401s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/us
+r/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm
+/lm-mathsy.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/t
+exmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/
+lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/f
+onts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx1
+0.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb>
+Output written on document.pdf (14 pages, 153177 bytes).
 PDF statistics:
- 89 PDF objects out of 1000 (max. 8388607)
- 62 compressed objects within 1 object stream
+ 80 PDF objects out of 1000 (max. 8388607)
+ 56 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  25089 words of extra memory for PDF output out of 29859 (max. 10000000)
 

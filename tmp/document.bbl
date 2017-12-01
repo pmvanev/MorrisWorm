@@ -1,8 +1,104 @@
-\begin{thebibliography}{0}
+\begin{thebibliography}{15}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Berghel(2001)]{berghel_code_2001}
+Hal Berghel.
+\newblock The code red worm.
+\newblock \emph{Communications of the ACM}, 44\penalty0 (12):\penalty0 15--19,
+  2001.
+
+\bibitem[Eichin and Rochlis(1989)]{eichin_microscope_1989}
+Mark~W. Eichin and Jon~A. Rochlis.
+\newblock With microscope and tweezers: {An} analysis of the internet virus of
+  november 1988.
+\newblock In \emph{Security and {Privacy}, 1989. {Proceedings}., 1989 {IEEE}
+  {Symposium} on}, pages 326--343. IEEE, 1989.
+
+\bibitem[Eisenberg et~al.(1989)Eisenberg, Gries, Hartmanis, Holcomb, Lynn, and
+  Santoro]{eisenberg_cornell_1989}
+Ted Eisenberg, David Gries, Juris Hartmanis, Don Holcomb, M.~Stuart Lynn, and
+  Thomas Santoro.
+\newblock The {Cornell} commission: on {Morris} and the worm.
+\newblock \emph{Communications of the ACM}, 32\penalty0 (6):\penalty0 706--709,
+  1989.
+
+\bibitem[Fisher(2002)]{fisher_living_2002}
+Dennis Fisher.
+\newblock {LIVING} {WITH} {WORMS}, {VIRUSES} {AND} {DAILY} {SECURITY} {ALERTS}.
+  (cover story).
+\newblock \emph{eWeek}, 19\penalty0 (6):\penalty0 20, February 2002.
+\newblock ISSN 15306283.
+
+\bibitem[Fithen and Fraser(1994)]{fithen_cert_1994}
+Katherine Fithen and Barbara Fraser.
+\newblock {CERT} incident response and the {Internet}.
+\newblock \emph{Communications of the ACM}, 37\penalty0 (8):\penalty0 108--113,
+  1994.
+
+\bibitem[Gardner(1989)]{gardner_internet_1989}
+Phillip~E. Gardner.
+\newblock The internet worm: {What} was said and when.
+\newblock \emph{Computers \& Security}, 8\penalty0 (4):\penalty0 305--316, June
+  1989.
+\newblock ISSN 0167-4048.
+\newblock \doi{10.1016/0167-4048(89)90092-8}.
+
+\bibitem[Hinden et~al.(1983)Hinden, Haverty, and Sheltzer]{hinden_darpa_1983}
+R.~Hinden, J.~Haverty, and A.~Sheltzer.
+\newblock The {DARPA} {Internet}: {Interconnecting} {Heterogeneous} {Computer}
+  {Networks} with {Gateways}.
+\newblock \emph{Computer}, 16\penalty0 (9):\penalty0 38--48, September 1983.
+\newblock ISSN 0018-9162.
+\newblock \doi{10.1109/MC.1983.1654494}.
+
+\bibitem[Kelty(2010)]{Christopher_Kelty}
+Christopher Kelty.
+\newblock The {Morris} {Worm}.
+\newblock \emph{Limn}, December 2010.
+
+\bibitem[Lee(2013)]{lee_how_2013}
+Timothy~B. Lee.
+\newblock How a grad student trying to build the first botnet brought the
+  {Internet} to its knees.
+\newblock \emph{Washington Post}, November 2013.
+\newblock ISSN 0190-8286.
+
+\bibitem[Marsan(2008)]{marsan_morris_2008}
+Carolyn~Duffy Marsan.
+\newblock Morris worm turns 20: {Look} what it's done.
+\newblock \emph{Network World}, October 2008.
+
+\bibitem[Seeley(1989)]{seeley_tour_1989}
+Donn Seeley.
+\newblock A {Tour} of the {Worm}.
+\newblock In \emph{Proceedings of 1989 {Winter} {USENIX} {Conference}, {Usenix}
+  {Association}, {San} {Diego}, {CA}, {February}}, 1989.
+
+\bibitem[Spafford(1989{\natexlab{a}})]{spafford_crisis_1989}
+Eugene~H. Spafford.
+\newblock Crisis and aftermath.
+\newblock \emph{Communications of the ACM}, 32\penalty0 (6):\penalty0 678--687,
+  1989{\natexlab{a}}.
+
+\bibitem[Spafford(1989{\natexlab{b}})]{spafford_internet_1989}
+Eugene~H. Spafford.
+\newblock The {Internet} worm program: {An} analysis.
+\newblock \emph{ACM SIGCOMM Computer Communication Review}, 19\penalty0
+  (1):\penalty0 17--57, 1989{\natexlab{b}}.
+
+\bibitem[Spafford(1989{\natexlab{c}})]{spafford_internet_1989-1}
+Eugene~H. Spafford.
+\newblock The internet worm incident.
+\newblock In \emph{European {Software} {Engineering} {Conference}}, pages
+  446--468. Springer, 1989{\natexlab{c}}.
+
+\bibitem[Strawn(2014)]{strawn_masterminds_2014}
+George Strawn.
+\newblock Masterminds of the {Arpanet}.
+\newblock \emph{IT Professional}, 16\penalty0 (3):\penalty0 66--68, 2014.
 
 \end{thebibliography}
