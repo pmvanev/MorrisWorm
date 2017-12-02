@@ -2,18 +2,18 @@
 \contentsline {section}{Incubation}{1}
 \contentsline {section}{Outbreak}{3}
 \contentsline {subsection}{Black Thursday}{3}
-\contentsline {subsection}{Vaccination}{4}
-\contentsline {section}{Dissection}{5}
-\contentsline {subsection}{Self Preservation}{5}
-\contentsline {subsection}{Reproduction}{5}
-\contentsline {subsection}{Password Cracking}{5}
-\contentsline {subsection}{Maladaptive Traits}{5}
-\contentsline {subsection}{Vestigial Organs}{6}
-\contentsline {section}{Convalescence}{7}
-\contentsline {subsection}{Awareness and Perception}{7}
-\contentsline {subsection}{Immune System Growth}{8}
-\contentsline {section}{Evolution}{9}
-\contentsline {subsection}{Descendants}{9}
-\contentsline {subsection}{Evolved Awareness and Perception}{9}
-\contentsline {section}{Post Mortem}{11}
-\contentsline {section}{\nonumberline References}{12}
+\contentsline {subsection}{Inoculation}{4}
+\contentsline {section}{Dissection}{6}
+\contentsline {subsection}{Self Preservation}{6}
+\contentsline {subsection}{Reproduction}{6}
+\contentsline {subsection}{Password Cracking}{6}
+\contentsline {subsection}{Maladaptive Traits}{6}
+\contentsline {subsection}{Vestigial Organs}{7}
+\contentsline {section}{Convalescence}{8}
+\contentsline {subsection}{Awareness and Perception}{8}
+\contentsline {subsection}{Immune System Growth}{9}
+\contentsline {section}{Evolution}{10}
+\contentsline {subsection}{Descendants}{10}
+\contentsline {subsection}{Evolved Awareness and Perception}{10}
+\contentsline {section}{Post Mortem}{12}
+\contentsline {section}{\nonumberline References}{13}

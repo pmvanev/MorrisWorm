@@ -1,18 +1,22 @@
+%%%%%%%%%%%%% OUTBREAK %%%%%%%%%%%%%%%%%%%
 \section*{Outbreak}
 \addcontentsline{toc}{section}{Outbreak}
-
-\subsection*{Black Thursday}
-\addcontentsline{toc}{subsection}{Black Thursday}
-
+This section describes events that took place between November $3^{rd}$ and
+Novermber $8^{th}$ of 1988. It outlines the Morris Worm's release, spread, and
+eventual eradication at a high level.
 Many works covering the Morris Worm begin with some variation of the phrase
 ``On the evening of November $2^{nd}$, 1988\ldots''.
-% \cite{seeley_tour_1989}
-% \cite{spafford_crisis_1989}
-% \cite{lee_washpost_2013}
-% \cite{spafford_internet_1989-1}
-% \cite{spafford_internet_1989}
-% \cite{eichin_microscope_1989}
-This section will do the same: 
+ \cite{seeley_tour_1989}
+ \cite{spafford_crisis_1989}
+ \cite{lee_washpost_2013}
+ \cite{spafford_internet_1989-1}
+ \cite{spafford_internet_1989}
+ \cite{eichin_microscope_1989}
+To honor this tradition, this section does the same: 
+
+%%%%%%%%%%%%% BLACK THURSDAY %%%%%%%%%%%%%%%%%%%
+\subsection*{Black Thursday}
+\addcontentsline{toc}{subsection}{Black Thursday}
 
 On the evening of Wednesday November $2^{nd}$, 1988, Robert Tappan Morris, a
 first year graduate student at Cornell University, released a worm onto the
@@ -52,30 +56,71 @@ Lawrence Livermore Labs, UCLA, Purdue University, Georgia Tech, Dartmouth,
 the Army Ballistics Research Lab, and the University of Chicago, amongst others.
 By this point many system administrators were aware of the spreading infection, and Peter Yee of UC Berkeley and NASA
 Ames Research Center had posted a message to the TCP-IP mailing, stating ``We
-are under attack''. Eventually, Thursday November $11^{th}$ would come to be
-known as ``Black Thursday''
-\cite{seeley_tour_1989}
-\cite{spafford_internet_1989-1}. 
+are under attack''\cite{seeley_tour_1989}
+\cite{spafford_internet_1989-1}. Eventually, Thursday November $11^{th}$ would
+come to be known as ``Black Thursday''. 
 
 At its peak, the infection is estimated to have spread to around 6,000 machines.
 That is 10\% of the approximately 60,000 computers connected to the internet at
-that time\cite{eichin_microscope_1989}\cite{marsan_morris_2008}. Syptoms of
-infection included blah blah blah TODO:*****************
+that time\cite{eichin_microscope_1989}\cite{marsan_morris_2008}. The worm
+targeted systems running 4.2 or 4.3 BSD UNIX and SunOS. The worm
+caused many of its infected hosts to crash.
+Hosts that didn't crash were riddled with processes that appeared to be shells.
+Their process tables, open file tables, and sometims swap space were exhausted.
+Latency soared as legitimate user processes competed for cpu time with worm
+processes. Logs showed odd activity that wasn't actually being caused by the
+users that they were recording. Finally, strange files were appearing in the
+/usr/tmp directory \cite{seeley_tour_1989}\cite{spafford_crisis_1989}.
 
 Fortunately, the research community had not only noticed the worm by early
-Thursday morning, they had already begun to combat it.
+Thursday morning, they had already begun fighting back.
 
 
-\subsection*{Vaccination}
-\addcontentsline{toc}{subsection}{Vaccination}
-\begin{itemize}
-    \item what researchers did to stop it
-    	\begin{itemize}
-    	\item sh soln.
-        \item software patches
-        \item mailing list
-        \item quarantined email solutions
-        \item disassembly and analysis ***(transition into next section)
-    	\end{itemize}
-\end{itemize}
 
+%%%%%%%%%%%%% INNOCULATION %%%%%%%%%%%%%%%%%%%
+\subsection*{Inoculation}
+\addcontentsline{toc}{subsection}{Inoculation}
+
+\cite{spafford_internet_1989-1} points out:
+\begin{quote}
+It is particularly interesting to note how quickly and how widely the Worm spread.
+It is also significant to note how quickly it was identified and stopped by an ad hoc col-
+lection of "Worm hunters" using the same network to communicate their results.
+\end{quote}
+
+By 5 am on Thursday, ``less than 12 hours after the program was first discovered on the network, the Computer Systems Research Group at Berkeley had
+developed an interim set of steps to halt its spread''
+\cite{spafford_crisis_1989}. While Black Thursday saw many a researcher and
+system administrator struggle with slow and crashing machines and trickling
+network connectivity, it also saw many swift and staggering successes for them.
+Mailing lists, including Dr. Spaffords Phage Mailing List
+\footnote{
+The Phage Mailing List would become the main conduit of communication and source
+of information about the worm both during the worm crisis and in subsequent weeks as Morris
+was prosecuted
+\cite{spafford_crisis_1989}\cite{spafford_internet_1989-1}\cite{lee_washpost_2013}.
+} 
+were put together and mainted to coordinate anti-worm efforts.
+Researchers captured the worm and analyzed its behavior. They devoloped worm
+vaccines with impressive speed. By the end of the day, software patches had been posted to
+eliminate the vulnerabilities exploited by the worm, namely in the 
+\textit{sendmail} and \textit{finger} applications.
+\cite{spafford_crisis_1989}
+\cite{seeley_tour_1989}.
+
+``By about 9 p.m. Thursday, another simple, effective method of stopping the
+invading program, without altering system utilities, was discovered at Purdue
+and also widely published''\cite{spafford_internet_1989-1}. This involved simply
+creating a file called \textit{sh} in the /usr/tmp directory.
+
+Autonamously teaming up, researchers had discovered how to defeat the Morris
+Worm in just one day and infection was on the decline. Over the next several
+days, the Morris worm was eradicated. \cite{spafford_internet_1989-1} relates
+that ``By Tuesday, November 8, most machines had connected back to the Internet
+and traffic patterns had returned to near normal.''
+
+By early Friday, November $4^{th}$, researchers had disassembled the worm's
+code 
+\cite{spafford_crisis_1989}
+\cite{seeley_tour_1989}.
+Several surprises were in store for those performing the autopsy.
