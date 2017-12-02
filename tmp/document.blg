@@ -16,34 +16,34 @@ Warning--string name "november" is undefined
 --line 257 of file References.bib
 You've used 22 entries,
             2773 wiz_defined-function locations,
-            730 strings with 7612 characters,
-and the built_in function-call counts, 9148 in all, are:
-= -- 857
-> -- 365
-< -- 21
-+ -- 135
-- -- 111
-* -- 694
-:= -- 1416
+            730 strings with 7521 characters,
+and the built_in function-call counts, 8883 in all, are:
+= -- 840
+> -- 318
+< -- 22
++ -- 120
+- -- 96
+* -- 657
+:= -- 1371
 add.period$ -- 82
 call.type$ -- 22
-change.case$ -- 103
+change.case$ -- 98
 chr.to.int$ -- 20
 cite$ -- 44
-duplicate$ -- 467
-empty$ -- 839
-format.name$ -- 137
-if$ -- 1925
+duplicate$ -- 466
+empty$ -- 838
+format.name$ -- 122
+if$ -- 1876
 int.to.chr$ -- 3
 int.to.str$ -- 1
 missing$ -- 22
 newline$ -- 132
 num.names$ -- 88
-pop$ -- 185
+pop$ -- 176
 preamble$ -- 1
-purify$ -- 81
+purify$ -- 76
 quote$ -- 0
-skip$ -- 316
+skip$ -- 311
 stack$ -- 0
 substring$ -- 364
 swap$ -- 56

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.24)  1 DEC 2017 16:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.24)  1 DEC 2017 18:59
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -704,25 +704,25 @@ ne 4.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/14.4'.
 (microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 7.
-(/usr/share/texmf/tex/latex/lm/omslmr.fd
-File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 7.
+[3
 
+
+]
 
 Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              You've used the KOMA-Script implementation of \@ssect
 (scrartcl)              from within a non compatible caller, that does not
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
 (scrartcl)              This could result in several error messages on input li
-ne 15.
+ne 69.
 
-) [3
-
-
-]
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 72.
+(/usr/share/texmf/tex/latex/lm/omslmr.fd
+File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 72.
+) [4]
 \openout2 = `Dissection.aux'.
 
  (./Dissection.tex
@@ -766,7 +766,7 @@ Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              This could result in several error messages on input li
 ne 35.
 
-[4
+[5
 
 
 ]
@@ -778,7 +778,7 @@ Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              This could result in several error messages on input li
 ne 45.
 
-) [5]
+) [6]
 \openout2 = `Convalescence.aux'.
 
  (./Convalescence.tex
@@ -806,10 +806,10 @@ Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              This could result in several error messages on input li
 ne 39.
 
-[6
+[7
 
 
-]) [7]
+]) [8]
 \openout2 = `Evolution.aux'.
 
  (./Evolution.tex
@@ -837,10 +837,10 @@ Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              This could result in several error messages on input li
 ne 21.
 
-[8
+[9
 
 
-]) [9]
+]) [10]
 \openout2 = `PostMortem.aux'.
 
  (./PostMortem.tex
@@ -852,39 +852,37 @@ Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              This could result in several error messages on input li
 ne 1.
 
-) [10
+) [11
 
 
-] (./document.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 43--48
-[][]\T1/lmr/m/n/12 (+20) Ted
- []
+] (./document.bbl [12
 
-[11
-
-]) [12] (./document.aux (./Abstract.aux) (./Incubation.aux) (./Outbreak.aux) (.
-/Dissection.aux) (./Convalescence.aux) (./Evolution.aux) (./PostMortem.aux)) ) 
+]) [13] (./document.aux (./Abstract.aux)
+(./Incubation.aux) (./Outbreak.aux) (./Dissection.aux) (./Convalescence.aux)
+(./Evolution.aux) (./PostMortem.aux)) ) 
 Here is how much of TeX's memory you used:
- 9489 strings out of 494910
- 146338 string characters out of 6179836
- 322964 words of memory out of 5000000
+ 9503 strings out of 494910
+ 146490 string characters out of 6179836
+ 322911 words of memory out of 5000000
  12394 multiletter control sequences out of 15000+600000
- 95517 words of font info for 129 fonts, out of 8000000 for 9000
+ 96142 words of font info for 136 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  47i,11n,52p,797b,401s stack positions out of 5000i,500n,10000p,200000b,80000s
-{
-/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips
-/lm/lm-mathsy.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/shar
-e/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/
-lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texm
-f/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.
-pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/ty
-pe1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb><
-/usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb>
-Output written on document.pdf (15 pages, 228840 bytes).
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-
+ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fon
+ts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</
+usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/
+public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/s
+hare/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public
+/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/tex
+mf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.
+pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/
+type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb
+>
+Output written on document.pdf (16 pages, 238269 bytes).
 PDF statistics:
- 95 PDF objects out of 1000 (max. 8388607)
- 67 compressed objects within 1 object stream
+ 106 PDF objects out of 1000 (max. 8388607)
+ 76 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  29185 words of extra memory for PDF output out of 29859 (max. 10000000)
 

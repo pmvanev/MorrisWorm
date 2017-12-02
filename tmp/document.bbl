@@ -38,10 +38,8 @@ Mark~W. Eichin and Jon~A. Rochlis.
 \newblock In \emph{Security and {Privacy}, 1989. {Proceedings}., 1989 {IEEE}
   {Symposium} on}, pages 326--343. IEEE, 1989.
 
-\bibitem[Eisenberg et~al.(1989)Eisenberg, Gries, Hartmanis, Holcomb, Lynn, and
-  Santoro]{eisenberg_cornell_1989}
-Ted Eisenberg, David Gries, Juris Hartmanis, Don Holcomb, M.~Stuart Lynn, and
-  Thomas Santoro.
+\bibitem[{Eisenberg et al.}(1989)]{eisenberg_cornell_1989}
+{Eisenberg et al.}
 \newblock The {Cornell} commission: on {Morris} and the worm.
 \newblock \emph{Communications of the ACM}, 32\penalty0 (6):\penalty0 706--709,
   1989.
