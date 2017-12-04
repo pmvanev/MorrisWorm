@@ -4,7 +4,7 @@ The top-level auxiliary file: document.aux
 A level-1 auxiliary file: Abstract.aux
 A level-1 auxiliary file: Incubation.aux
 A level-1 auxiliary file: Outbreak.aux
-A level-1 auxiliary file: Dissection.aux
+A level-1 auxiliary file: Autopsy.aux
 A level-1 auxiliary file: Convalescence.aux
 A level-1 auxiliary file: Evolution.aux
 A level-1 auxiliary file: PostMortem.aux
@@ -16,7 +16,7 @@ Warning--string name "november" is undefined
 --line 257 of file References.bib
 You've used 22 entries,
             2773 wiz_defined-function locations,
-            730 strings with 7521 characters,
+            730 strings with 7518 characters,
 and the built_in function-call counts, 8883 in all, are:
 = -- 840
 > -- 318

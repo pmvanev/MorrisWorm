@@ -3,17 +3,19 @@
 \contentsline {section}{Outbreak}{3}
 \contentsline {subsection}{Black Thursday}{3}
 \contentsline {subsection}{Inoculation}{4}
-\contentsline {section}{Dissection}{6}
+\contentsline {section}{Autopsy}{6}
 \contentsline {subsection}{Self Preservation}{6}
-\contentsline {subsection}{Reproduction}{6}
-\contentsline {subsection}{Password Cracking}{6}
-\contentsline {subsection}{Maladaptive Traits}{6}
-\contentsline {subsection}{Vestigial Organs}{7}
-\contentsline {section}{Convalescence}{8}
-\contentsline {subsection}{Awareness and Perception}{8}
-\contentsline {subsection}{Immune System Growth}{9}
-\contentsline {section}{Evolution}{10}
-\contentsline {subsection}{Descendants}{10}
-\contentsline {subsection}{Evolved Awareness and Perception}{10}
-\contentsline {section}{Post Mortem}{12}
-\contentsline {section}{\nonumberline References}{13}
+\contentsline {subsection}{Reproduction}{8}
+\contentsline {subsubsection}{rsh/rexec}{8}
+\contentsline {subsubsection}{finger}{8}
+\contentsline {subsubsection}{sendmail}{9}
+\contentsline {subsection}{Maladaptive Traits}{9}
+\contentsline {subsection}{Vestigial Organs}{9}
+\contentsline {section}{Convalescence}{10}
+\contentsline {subsection}{Awareness and Perception}{10}
+\contentsline {subsection}{Immune System Growth}{11}
+\contentsline {section}{Evolution}{12}
+\contentsline {subsection}{Descendants}{12}
+\contentsline {subsection}{Evolved Awareness and Perception}{12}
+\contentsline {section}{Post Mortem}{14}
+\contentsline {section}{\nonumberline References}{15}

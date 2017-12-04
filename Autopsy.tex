@@ -1,0 +1,148 @@
+\section*{Autopsy}
+\addcontentsline{toc}{section}{Autopsy}
+In the wake of the Morris Worm outbreak, several
+publications presented in depth analyses of the worms
+anatomy based on disassembled worm code. This section explores the worm's
+anatomy as presented by these dissections at relatively shallow depth. Readers interested
+in more detail are encoured to read the following publications on which this
+section is based: 
+\cite{seeley_tour_1989}
+\cite{spafford_crisis_1989}
+\cite{spafford_internet_1989}
+\cite{eichin_microscope_1989}
+
+The Morris Worm is written in C. Its head consists of a 99 line ``bootstrap''
+or ``vector'' program
+\footnote{
+also called a ``grappling hook'', or the ``l1'' program because it is found in 
+the file \textit{l1.c} \cite{spafford_crisis_1989}
+}
+, used to download the main body of the worm and get it up
+and running on a new machine. About 3200 lines of C code comprise the worm's
+body. It contains code to help the worm preserve itself, discover and infect
+new machines, crack user passwords, and spread. It also contains unused code
+and storage space, as well as
+numerous software bugs and mistakes.
+
+
+\subsection*{Self Preservation}
+\addcontentsline{toc}{subsection}{Self Preservation}
+The worm comes equipped with several mechanisms disguise itself and even fend off potential attacks form system administrators. Upon infection, a
+new worm reads any necessary files into memory and deletes them so that it
+leaves no trace on disk before zeroing out its argument list. It then changes
+its name to \textit{sh} and masquerades as a harmless shell process. To
+continue to camouflage itself throughout its lifecycle, the worm occassionally uses the
+UNIX \textit{fork} system call to change its process I.D. This also renews the
+long running worm's c.p.u. allocation priority in the eyes of the UNIX
+scheduler, which may slowly reduce the amount of c.p.u. time granted to long
+running processes. All of these tactics allow the worm to blend in and run
+unnoticed, but hiding is just one of its defense mechanisms.
+
+The worm also employs measures to obscure itself in case of its discovery. A
+basic form of encryption based on the logical exclusive or operation is used to
+encode disk files it uses. The worm disables core files to protect against
+accidental core dumps in the event of a mistake, or even forced core dumps by a
+prodding system administrator. Unnecessary symbols are removed from the worm
+program symbol table to make analysis more difficult in the event that a worm is
+captured. These hurdles serve to passively obstruct worm analysis, but the worm
+takes its own security a step further.
+
+The Morris Worm implements its own active authentication.
+When the bootstrap program downloads the worm body to a newly infected host, the client
+program authenticates the worm server via the exchange of a ``magic number'', a
+random number that both parties agree upon prior to communication. 
+This prevents anyone from battling the worm with imposter worms. Equipped with
+tools to hide on a host system, change its appearance, and actively authenticate
+other worms, a worm program is reasonably capable of fending for itself.  With
+multiple methods of self preservation at its disposal, the worm can focus on
+its other work.
+
+\subsection*{Password Cracking}
+Once it has infiltrated a system, the worm opens the password file
+containing hashed account passwords and begins to try to crack them, guessing
+different passwords, hashing them, and comparing the results to the entries in
+the password file. The worm generates guesses for user passwords in the
+following ways:
+\begin{itemize}
+\item Users and administrators sometimes carelessly fail to change
+default passwords, or even to enter a password for a new account. This means
+that trying a blank password, or common things \textit{admin} often allow access
+to an account.
+\item To remember passwords more easily, users often choose simple, easy to
+guess passwords. The worm tries very simple passwords, like the user name or the
+user name backwards, in the hopes that it can easily ``guess'' a user's
+password. The worm also carries with it a miniature dictionary of
+known commonly used passwords to try.
+\item For convenience, users often use the same password on multiple
+machines. If this is the case, once the worm has a user's password on one
+machine, it is able to execute remote shells on neighboring machines with ease.
+\item Finally, if none of the previous methods work, the worm begins to try all
+of the words in the UNIX online dictionary, both capital and lowercase.
+\end{itemize}
+Notice that none of these methods attempt to attack the hashing algorithm used
+to encode the passwords in the password file. Rather, the worm attacks a known
+tendency of users to choose weak passwords.
+
+
+\subsection*{Reproduction}
+\addcontentsline{toc}{subsection}{Reproduction}
+Because of the security flaws they exploit, the Morris Worm's spreading
+mechanisms are particularly noteworthy. It first tries to capitalize on weak
+user passwords to create a remote shell with the \textit{rsh} and \textit{rexec}
+commands. If this doesn't work, it uses a buffer overrun in the \textit{finger}
+application to create a remote shell on a new machine. Finally, if the two
+previous methods are ineffective, the worm sneaks in through a trap door in the
+\textit{sendmail} application. These exploits are describe in more detail below. 
+\subsubsection*{rsh/rexec}
+\addcontentsline{toc}{subsubsection}{rsh/rexec}
+These programs are intended to allow users to spawn shell sessions on remote
+machines. After infiltrating a user account as described in the previous
+section the worm can use the \textit{rsh} and \textit{rexec} programs to log
+into a remote machine and infect it. The worm seeks out new host machines to
+infect by looking for connected host accounts in
+system tables and user files, or even scanning the network for other machines.
+
+\subsubsection*{finger}
+\addcontentsline{toc}{subsubsection}{finger}
+The finger application gives directory information about users. In 1988 it used
+the C library \textit{gets} function to read an incoming request into a buffer.
+Even in 1988, this function was know to have a classic buffer overflow vulnerability, but
+programmers often prioritize ease of use and convention over security when
+writing code. The Morris worm exploited this buffer overflow vulnerability,
+writing VAX machine code to create a remote shell into to the buffer and then
+overwriting the programs stack frame so that the remote c.p.u. would execute
+this code when the request finished processing. This allowed the worm to spread
+to any VAX machine running the Berkeley version of the finger server.
+
+\subsubsection*{sendmail}
+\addcontentsline{toc}{subsubsection}{sendmail}
+The sendmail application provides SMTP email service. The Morris Worm exploits
+a trap door that is intended to be used for debugging. Entering a debug command
+allows one to send commands instead of email to a remote host. The worm uses
+this little known feature in an unintended way, sending an anonymous debug email
+to a remote host with a copy of the bootstrap program and commands to compile and run
+it. This way, the infecting worm doesn't need to open a shell on the remote host
+to download and run the bootstrap program.
+
+
+\subsection*{Maladaptive Traits}
+\addcontentsline{toc}{subsection}{Maladaptive Traits}
+    	\begin{itemize}
+ 	    \item detecting itself / coinflip for self termination and immortality bug
+        \item no checks for good return values
+        \item pass struct instead of pointer to struct
+        \item joke about bug fixes in worm
+        \item other stuff pointed out by Spaf
+        \end{itemize}
+
+\subsection*{Vestigial Organs}
+\addcontentsline{toc}{subsection}{Vestigial Organs}
+    	\begin{itemize}
+        \item UDP to ernie over TCP connection, never sent
+        \item accidental leftover files in /tmp (of compilation too slow?)
+        \item unused functions and dead code
+        \item unused file structure entries
+    	\item unused features- could have been much worse... ***(transition into
+    next section)
+        \end{itemize}
+
