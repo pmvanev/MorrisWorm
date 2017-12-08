@@ -6,16 +6,13 @@
 \contentsline {section}{Autopsy}{6}
 \contentsline {subsection}{Self Preservation}{6}
 \contentsline {subsection}{Reproduction}{8}
-\contentsline {subsubsection}{rsh/rexec}{8}
-\contentsline {subsubsection}{finger}{8}
-\contentsline {subsubsection}{sendmail}{9}
 \contentsline {subsection}{Maladaptive Traits}{9}
-\contentsline {subsection}{Vestigial Organs}{9}
-\contentsline {section}{Convalescence}{10}
-\contentsline {subsection}{Awareness and Perception}{10}
-\contentsline {subsection}{Immune System Growth}{11}
-\contentsline {section}{Evolution}{12}
-\contentsline {subsection}{Descendants}{12}
-\contentsline {subsection}{Evolved Awareness and Perception}{12}
-\contentsline {section}{Post Mortem}{14}
-\contentsline {section}{\nonumberline References}{15}
+\contentsline {subsection}{Vestigial Organs}{10}
+\contentsline {section}{Convalescence}{12}
+\contentsline {subsection}{Awareness and Perception}{12}
+\contentsline {subsection}{Antibodies}{16}
+\contentsline {section}{Evolution}{18}
+\contentsline {subsection}{Descendants}{18}
+\contentsline {subsection}{Evolved Awareness and Perception}{18}
+\contentsline {section}{Post Mortem}{20}
+\contentsline {section}{\nonumberline References}{21}

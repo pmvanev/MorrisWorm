@@ -4,8 +4,8 @@ In the wake of the Morris Worm outbreak, several
 publications presented in depth analyses of the worms
 anatomy based on disassembled worm code. This section explores the worm's
 anatomy as presented by these dissections at relatively shallow depth. Readers interested
-in more detail are encoured to read the following publications on which this
-section is based: 
+in more detail are encoured to read the following publications on which the
+entirety of this section is based: 
 \cite{seeley_tour_1989}
 \cite{spafford_crisis_1989}
 \cite{spafford_internet_1989}
@@ -27,20 +27,21 @@ numerous software bugs and mistakes.
 
 \subsection*{Self Preservation}
 \addcontentsline{toc}{subsection}{Self Preservation}
-The worm comes equipped with several mechanisms disguise itself and even fend off potential attacks form system administrators. Upon infection, a
-new worm reads any necessary files into memory and deletes them so that it
-leaves no trace on disk before zeroing out its argument list. It then changes
-its name to \textit{sh} and masquerades as a harmless shell process. To
-continue to camouflage itself throughout its lifecycle, the worm occassionally uses the
+The worm comes equipped with several mechanisms disguise itself and even fend
+off potential attacks from system administrators. Upon infection, a new worm
+reads any necessary files into memory and deletes them so that it leaves no
+trace on disk before zeroing out its argument list. It then changes its name to
+\textit{sh} and masquerades as a harmless shell process. To continue to
+camouflage itself throughout its lifecycle, the worm occassionally uses the
 UNIX \textit{fork} system call to change its process I.D. This also renews the
-long running worm's c.p.u. allocation priority in the eyes of the UNIX
-scheduler, which may slowly reduce the amount of c.p.u. time granted to long
+long running worm's cpu allocation priority in the eyes of the UNIX
+scheduler, which may slowly reduce the amount of cpu time granted to long
 running processes. All of these tactics allow the worm to blend in and run
 unnoticed, but hiding is just one of its defense mechanisms.
 
 The worm also employs measures to obscure itself in case of its discovery. A
-basic form of encryption based on the logical exclusive or operation is used to
-encode disk files it uses. The worm disables core files to protect against
+basic form of encryption based on the logical exclusive or operation
+encodes its disk files. The worm disables core files to protect against
 accidental core dumps in the event of a mistake, or even forced core dumps by a
 prodding system administrator. Unnecessary symbols are removed from the worm
 program symbol table to make analysis more difficult in the event that a worm is
@@ -63,22 +64,25 @@ containing hashed account passwords and begins to try to crack them, guessing
 different passwords, hashing them, and comparing the results to the entries in
 the password file. The worm generates guesses for user passwords in the
 following ways:
+
 \begin{itemize}
 \item Users and administrators sometimes carelessly fail to change
-default passwords, or even to enter a password for a new account. This means
-that trying a blank password, or common things \textit{admin} often allow access
-to an account.
+default passwords, or even to enter a password for a new account. The worm is
+therefore able to infiltrate some accounts with a blank password or other
+default passwords like \textit{admin}.
 \item To remember passwords more easily, users often choose simple, easy to
 guess passwords. The worm tries very simple passwords, like the user name or the
-user name backwards, in the hopes that it can easily ``guess'' a user's
+user name backwards, in the hopes that it can easily guess a user's
 password. The worm also carries with it a miniature dictionary of
-known commonly used passwords to try.
+known commonly used passwords to try. 
+\item If none of the previous methods work, the worm begins to try all
+of the words in the UNIX online dictionary, both capital and lowercase.
 \item For convenience, users often use the same password on multiple
 machines. If this is the case, once the worm has a user's password on one
-machine, it is able to execute remote shells on neighboring machines with ease.
-\item Finally, if none of the previous methods work, the worm begins to try all
-of the words in the UNIX online dictionary, both capital and lowercase.
+machine, it tries to login as the user with the same password on neighboring
+machines.
 \end{itemize}
+
 Notice that none of these methods attempt to attack the hashing algorithm used
 to encode the passwords in the password file. Rather, the worm attacks a known
 tendency of users to choose weak passwords.
@@ -89,33 +93,33 @@ tendency of users to choose weak passwords.
 Because of the security flaws they exploit, the Morris Worm's spreading
 mechanisms are particularly noteworthy. It first tries to capitalize on weak
 user passwords to create a remote shell with the \textit{rsh} and \textit{rexec}
-commands. If this doesn't work, it uses a buffer overrun in the \textit{finger}
+commands.
+If this doesn't work, it uses a buffer overrun in the \textit{finger}
 application to create a remote shell on a new machine. Finally, if the two
 previous methods are ineffective, the worm sneaks in through a trap door in the
-\textit{sendmail} application. These exploits are describe in more detail below. 
+\textit{sendmail} application. These exploits are described in more detail
+below.
 \subsubsection*{rsh/rexec}
-\addcontentsline{toc}{subsubsection}{rsh/rexec}
 These programs are intended to allow users to spawn shell sessions on remote
 machines. After infiltrating a user account as described in the previous
 section the worm can use the \textit{rsh} and \textit{rexec} programs to log
 into a remote machine and infect it. The worm seeks out new host machines to
 infect by looking for connected host accounts in
-system tables and user files, or even scanning the network for other machines.
+system tables and user files on an infected machine, or even scanning the
+network for other machines.
 
 \subsubsection*{finger}
-\addcontentsline{toc}{subsubsection}{finger}
 The finger application gives directory information about users. In 1988 it used
 the C library \textit{gets} function to read an incoming request into a buffer.
-Even in 1988, this function was know to have a classic buffer overflow vulnerability, but
-programmers often prioritize ease of use and convention over security when
+Even in 1988, this function was known to have a classic buffer overflow
+vulnerability, but programmers often prioritize ease of use and convention over security when
 writing code. The Morris worm exploited this buffer overflow vulnerability,
 writing VAX machine code to create a remote shell into to the buffer and then
-overwriting the programs stack frame so that the remote c.p.u. would execute
+overwriting the program's stack frame so that the remote c.p.u. would execute
 this code when the request finished processing. This allowed the worm to spread
 to any VAX machine running the Berkeley version of the finger server.
 
 \subsubsection*{sendmail}
-\addcontentsline{toc}{subsubsection}{sendmail}
 The sendmail application provides SMTP email service. The Morris Worm exploits
 a trap door that is intended to be used for debugging. Entering a debug command
 allows one to send commands instead of email to a remote host. The worm uses
@@ -125,24 +129,94 @@ it. This way, the infecting worm doesn't need to open a shell on the remote host
 to download and run the bootstrap program.
 
 
+
 \subsection*{Maladaptive Traits}
 \addcontentsline{toc}{subsection}{Maladaptive Traits}
-    	\begin{itemize}
- 	    \item detecting itself / coinflip for self termination and immortality bug
-        \item no checks for good return values
-        \item pass struct instead of pointer to struct
-        \item joke about bug fixes in worm
-        \item other stuff pointed out by Spaf
-        \end{itemize}
+As witnessed on Black Thursday, the previously described innards of the worm are
+keenly adept in their respective purposes, suggesting that the worm program was
+fairly well engineered. However, upon further inspection, researchers found
+numerous instances of poor programming practice and several critical
+bugs that ultimately led to its exposure and subsequent demise.
+
+To avoid infecting the same machine multiple times, the worm 
+intermittently checks for other worms on the same machine. If another worm is
+found, the two perform a virtual coinflip and the loser agrees to self
+terminate.
+However, 1 in 7 times, the loser of the coinflip becomes immortal instead of
+self terminating, perhaps in order to prevent imposter worms planted by network
+administrators from attacking the real worms\cite{spafford_internet_1989}.
+Rather than preventing redundant infection, however, this behavior results in
+numerous immortal worms clogging up the same machine. This particular bug is
+what led to the very noticeable latency and crashing symptoms that affected many
+machines on Black Thursday and made the worm rather noticeable.
+
+\cite{spafford_internet_1989}, \cite{seeley_tour_1989}, and \cite{eichin_microscope_1989}
+all point many more mistakes, several of which are listed below: 
+\begin{itemize}
+\item The worm's code doesn't bother to check return conditions for system
+calls. This means that it could try to access memory that was
+unsuccessfuly allocated, communicate over network connections that failed to
+connect, etc. 
+\item The worm tries to send a UDP packet the a remote user account,
+\textit{ernie.berkeley.edu} over a TCP socket, which, of course, doesn't work.
+\item In some places, the code passes incorrect arguments to functions, like a
+\textit{struct} instead of a pointer to the \textit{struct}.
+\item Several bugs exits in the worm's reproduction exploitations that make it
+less effective than it could have been. 
+\item If the worm code doesn't compile fast enough on a newly infected system,
+error exiting doesn't erase all files, leaving traces of the worm leftover on
+disk.
+\end{itemize}
+
+Perhaps even more telling than the numerous mistakes in the buggy worm code
+are its unused features.
+
 
 \subsection*{Vestigial Organs}
 \addcontentsline{toc}{subsection}{Vestigial Organs}
-    	\begin{itemize}
-        \item UDP to ernie over TCP connection, never sent
-        \item accidental leftover files in /tmp (of compilation too slow?)
-        \item unused functions and dead code
-        \item unused file structure entries
-    	\item unused features- could have been much worse... ***(transition into
-    next section)
-        \end{itemize}
+
+Researchers dissecting the worm found several
+unused attributes. The worm contains redundant code, dead code\footnote{code
+that is never used}, and meaningless code. For instance, it tries to remove the
+non-existent file \textit{/tmp/.dumb} and it redundantly seeds a random number
+generator multiple times. Some of its functions have local variables that are
+never used and it contains code that is only called in conditions that can
+never be met. 
+
+Dissecters also found conspicuous and curious omissions. The worm doesn't bother
+to do anything special with the \textit{root} account if it is cracked, even
+though this account gives the worm complete power over the host machine.
+It doesn't delete system files, modify other programs, attempt to
+\textit{deliberately} disable a system, install back doors or trojan horses,
+attempt to record or transmit passwords or other data, or engage in any other
+malicious behaviors that one might expect. 
+
+A particularly interesting omission lies in the unused spaces in its file table.
+The worm maintains a data structure that can hold information about and transer
+up to twenty files, of which it only uses three. These other slots could have
+housed files that \textit{do} do the pernicious things
+mentioned previously. According to \cite{lee_washpost_2013},
+
+\begin{quote}
+An early version of the worm recovered from an automatic backup of Morris's
+Cornell files included extensive comments describing Morris's vision for the
+project. Those comments suggest that Morris had even more ambitious goals than
+he eventually achieved. Morris didn't just want to create a worm that would
+silently replicate itself across the Internet. He hoped to build what we would
+now call a botnet: a network of thousands of computers coordinating with one
+another and available to carry out further instructions at the direction of
+their master.
+
+The worm, he wrote in comments on an early version of the worm, will need to
+"decide what to break into next" and will need "methods of breaking into other
+systems." He also wanted "some way for ME to send out commands, protected by an
+encoded password."
+\end{quote}
+
+Perhaps it was Morris' intention to transfer the code containing these
+capabilities in the empty slots in the file table. \cite{lee_washpost_2013}
+speculates that the datagram the worm failed to send to the 
+\textit{ernie.berkeley.edu} may have been a beginning phase of the development
+of this type of command center. It is clear that had Morris built in this or
+any other malicious functionality, the worm could have been much more dangerous.
 

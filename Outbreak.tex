@@ -5,14 +5,8 @@ This section describes events that took place between November $3^{rd}$ and
 Novermber $8^{th}$ of 1988. It outlines the Morris Worm's release, spread, and
 eventual eradication at a high level.
 Many works covering the Morris Worm begin with some variation of the phrase
-``On the evening of November $2^{nd}$, 1988\ldots''
- \cite{seeley_tour_1989}
- \cite{spafford_crisis_1989}
- \cite{lee_washpost_2013}
- \cite{spafford_internet_1989-1}
- \cite{spafford_internet_1989}
- \cite{eichin_microscope_1989}.
-To honor this tradition, this section does the same: 
+``On the evening of November $2^{nd}$, 1988\ldots''.
+To honor this tradition, the next section does the same. 
 
 %%%%%%%%%%%%% BLACK THURSDAY %%%%%%%%%%%%%%%%%%%
 \subsection*{Black Thursday}
@@ -30,8 +24,8 @@ the University of Utah,
 Stanford,
 the University of Minnesota,
 and the University of North Carolina
-\cite{seeley_tour_1989}
-\cite{spafford_internet_1989-1}.
+\cite{seeley_tour_1989,
+spafford_internet_1989-1}.
 
 Perhaps the worm spread faster than even Morris had anticipated. Around
 11 pm and again at around 11:30 pm, he contacted Andrew Sudduth and Paul Graham
@@ -66,11 +60,11 @@ that time\cite{eichin_microscope_1989}\cite{marsan_morris_2008}. The worm
 targeted systems running 4.2 or 4.3 BSD UNIX and SunOS. The worm
 caused many of its infected hosts to crash.
 Hosts that didn't crash were riddled with processes that appeared to be shells.
-Their process tables, open file tables, and sometims swap space were exhausted.
+Their process tables, open file tables, and sometimes swap space were exhausted.
 Latency soared as legitimate user processes competed for cpu time with worm
 processes. Logs showed odd activity that wasn't actually being caused by the
 users that they were recording. Finally, strange files were appearing in the
-/usr/tmp directory \cite{seeley_tour_1989}\cite{spafford_crisis_1989}.
+\textit{/usr/tmp} directory \cite{seeley_tour_1989}\cite{spafford_crisis_1989}.
 
 Fortunately, the research community had not only noticed the worm by early
 Thursday morning, they had already begun fighting back.
@@ -100,7 +94,7 @@ of information about the worm both during the worm crisis and in subsequent week
 was prosecuted
 \cite{spafford_crisis_1989}\cite{spafford_internet_1989-1}\cite{lee_washpost_2013}.
 } 
-were put together and mainted to coordinate anti-worm efforts.
+were put together and maintained to coordinate anti-worm efforts.
 Researchers captured the worm and analyzed its behavior. They devoloped worm
 vaccines with impressive speed. By the end of the day, software patches had been posted to
 eliminate the vulnerabilities exploited by the worm, namely in the 
