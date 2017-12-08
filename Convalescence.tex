@@ -157,46 +157,109 @@ offenses, and may, in fact, encourage new incidents.
 Another question of interest brought to light by the worm crisis concerned the
 intellectual prowess associated with cyber attacks. While the public often
 envisions computer hackers as geniuses who flex an advanced intellect and
-intimate knowledge of computer science to perpetrate cunning attacks, the
-academic community was quick to point the fallacy in such thinking.
+knowledge of computer science to perpetrate cunning attacks, the
+academic community was quick to point out the fallacy in such thinking.
+\cite{spafford_crisis_1989} asserts thats ``mastery of computer science and
+computer engineering now involves a great deal more than can be shown by using
+intimate knowledge of the flaws in a particular operating system.'' The Cornell
+Commission report points out that ``Although the worm was technically
+sophisticated, its creation required dedication and perseverance rather than
+technical brilliance.'' Where the underinformed and computer
+illiterate saw technological mastery, educated and experienced members of the
+computing community saw cheap hacks that lacked any substantive creativity or
+insight.
 
-            	\begin{itemize}
-            	\item Genius computer whiz?
-            	\begin{itemize}
-            		\item researchers: NO	
-            		\item public: Yes	
-            	\end{itemize}
-       			\end{itemize}
-
-
-\subsubsection*{Accountability}
-Who is at fault: administrators vs. vendors\ldots beginning of
-``blame the victim'' mentality
+A final question of interest that came up involved accountability for the
+incident. While it seemed obvious to some that Morris, the sole perpetrator of
+the attack, was responsible for the damage that his worm had caused, others
+attempted to redirect the blame. It is an unfortunate tendency in our society to
+blame perpetuation of many types of crime on the victim, either subtly or
+overtly. Computer crime is no different in this regard. In the wake of the
+Morris Worm incident, much of the public attempted to place blame on network
+administrators and computer users who were using vulnerable versions of the
+software that the worm exploited. Fortunately, once again, the research
+community, viewing computer security from an experienced, educated, and
+rational platform was quick to point out fallacy in misplacing blame.
+For example, \cite{spafford_crisis_1989} observes that
+\begin{quote}
+The claim that the victims of the worm were somehow responsible for the
+invasion of their machines is also curious. The individuals making this claim
+seem to be stating that there is some moral or legal obligation for computer
+users to track and install every conceivable security fix and mechanism
+available\ldots
+To attempt to blame these individuals for the success of the worm is equivalent
+to blaming an arson victim for the fire because she didn't build her house of
+fireproof metal.
+\end{quote}
+Whether or not the victims of cyber attacks should bear some of the blame, it
+was clear to everyone that they should be implementing stronger security
+measures.
 
 \subsection*{Antibodies}
 \addcontentsline{toc}{subsection}{Antibodies}
-	\begin{itemize}
-	\item prosecution under CFAA
-    	\begin{itemize}
-    	\item Morris' claim that it was unintentional... "knowingly" vs "intentionally"	.. accident
-    	\item Morris' claim that he didn't gain ungranted access because he had access to Cornell computers
-    	\item Precedent: the internet falls under CFAA
-        \item Question: what if worm hadn't infected government computer?
-    	\end{itemize}
-	\item computer security as a legitimate field
-        	\begin{itemize}
-        	\item tons of publications
-            \item questions about security design principles (like least privilege)
-            \item questions about ethics and law ***(transition to next section)
-			\item better security practices 
-				\begin{itemize}
-				\item need for better passwords
-				\item better patching of vulnerabilites
-        	    \end{itemize}
-        	\end{itemize}
-    \item crisis response protocol
-    	\begin{itemize}
-    	\item formation of CERT at CMU
-    	\item phage mailing list
-    	\end{itemize}
-    \end{itemize}
+Antibodies are produced to fight a biological infection. To fight previously
+unencountered infections, an immune system must often develop new antibodies.
+The same can be said cyber attacks and their countermeasures. As a result of
+the worm incident, Robert Morris was the first felon convicted under the
+Computer Fraud and Abuse Act (CFAA) of 1986. In the wake of the crisis,
+computer security gained recognition as a legimate and important research
+area. In response to the demonstrated need for computer crisis response
+infrastructure, the Computer Emergency Response Team (CERT) was established at
+CMU. Thus, the Morris Worm spurred the unprecedented use of some existing
+countermeasures and the development of important new ones.
+
+\subsubsection*{The Computer Fraud and Abuse Act}
+Morris was tried and convicted as a felon under the CFAA. He plead guilty and
+publicly apologized for the incident. It was clear that he was the worm's
+author. It was also apparent that he hadn't intended to do the major damage that
+he did, and as a result he didn't serve any prison time. Instead, he was
+fined \$10,000 and sentenced to three years probration and 400 hours of
+community service\cite{lee_washpost_2013}. This seems to reflect the sentiment
+expressed by academics above: that he should be punished, but not too severely.
+This helped to establish the precedent that even accidental cyber crime would be
+taken seriously in the eyes of the law. It also set the precedent that the
+intenet fell within the purview of the CFAA\cite{adams_controlling_1996}. 
+
+\subsubsection*{CERT}
+The Morris Worm was aptly contained by a group of researchers and
+system administrators that autonamously came together. However, the
+computing community recognized the need for a more formal approach to computer
+system crisis response. An National Computer Security Center (NCSC) post-mortem
+workshop issued a recommendation that ``that a formal crisis center be
+established to deal with future incidents and to provide a formal point of
+contact for individuals wishing to report problems'' \cite{spafford_crisis_1989}.
+ARPA installed the Computer Emergent Response Team Coordination Center
+as part of the Software Engineering Institute at Carnegie Mellon University as
+the first official internet crisis management center in direct response to the
+Morris Worm\cite{fithen_cert_1994}.
+
+\subsubsection*{Computer Security Research}
+The worm crisis invigorated the field of Computer Security. This is cleary
+evidence by the numerous publications it generated, many of which provide the
+the foundation for this paper. Papers like \cite{eichin_microscope_1989} began
+using the incident as a platform to discuss underlying security principles and
+best practices, including arguments for stronger passwords, personnel secruity,
+and a software vulnerability patching. Computer Security suddently gained
+elevated legitimacy as a research field. \cite{marsan_morris_2008} quotes, from
+an interview with Dr. Spafford:
+\begin{quote}
+``I had been told by my advisors there was no future in applied computer
+security research,'' Spafford says. ``When this happened, suddenly a whole lot
+of people realized that the development of systems had leapfrogged the
+controlled, mainframe environment and a different kind of security model needed
+to be observed.''
+\end{quote}
+
+\cite{marsan_morris_2008} goes on to quote from an interview with Eric Allman,
+author of the \textit{sendmail} application:
+\begin{quote}
+``The Morris worm opened up computer security as a legitimate topic,'' Allman
+says. ``Before that, there were a few people who worked on computer security
+and they were mostly cryptographers, but the concept of computer security as a
+field of study was legitimized a lot by that.''
+\end{quote}
+
+It wasn't just legitimate researchers that benifited from a study of the first
+major internet attack, however. Future generations of hackers would
+also have much to learn from the Morris Worm.
+    
