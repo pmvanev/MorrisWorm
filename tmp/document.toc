@@ -11,8 +11,8 @@
 \contentsline {section}{Convalescence}{12}
 \contentsline {subsection}{Awareness and Perception}{12}
 \contentsline {subsection}{Antibodies}{17}
-\contentsline {section}{Evolution}{20}
-\contentsline {subsection}{Descendants}{20}
-\contentsline {subsection}{Evolved Awareness and Perception}{20}
-\contentsline {section}{Post Mortem}{22}
-\contentsline {section}{\nonumberline References}{23}
+\contentsline {section}{Evolution}{19}
+\contentsline {subsection}{Descendants}{19}
+\contentsline {subsection}{Evolved Awareness and Perception}{22}
+\contentsline {section}{Post Mortem}{23}
+\contentsline {section}{\nonumberline References}{24}

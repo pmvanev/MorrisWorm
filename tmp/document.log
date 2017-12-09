@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.24)  8 DEC 2017 14:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.24)  8 DEC 2017 19:14
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -894,7 +894,7 @@ Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              This could result in several error messages on input li
 ne 236.
 
-) [18] [19]
+) [18]
 \openout2 = `Evolution.aux'.
 
  (./Evolution.tex
@@ -912,7 +912,7 @@ Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              from within a non compatible caller, that does not
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
 (scrartcl)              This could result in several error messages on input li
-ne 13.
+ne 12.
 
 
 Class scrartcl Warning: incompatible usage of \@ssect detected.
@@ -920,12 +920,58 @@ Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              from within a non compatible caller, that does not
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
 (scrartcl)              This could result in several error messages on input li
-ne 21.
+ne 26.
 
-[20
+[19
 
 
-]) [21]
+]
+
+Class scrartcl Warning: incompatible usage of \@ssect detected.
+(scrartcl)              You've used the KOMA-Script implementation of \@ssect
+(scrartcl)              from within a non compatible caller, that does not
+(scrartcl)              \scr@s@ct@@nn@m@ locally.
+(scrartcl)              This could result in several error messages on input li
+ne 69.
+
+[20]
+
+Class scrartcl Warning: incompatible usage of \@ssect detected.
+(scrartcl)              You've used the KOMA-Script implementation of \@ssect
+(scrartcl)              from within a non compatible caller, that does not
+(scrartcl)              \scr@s@ct@@nn@m@ locally.
+(scrartcl)              This could result in several error messages on input li
+ne 89.
+
+
+Overfull \hbox (43.32117pt too wide) in paragraph at lines 90--96
+\T1/lmr/m/n/12 (-20) Mi-crosoft's Win-dow-sup-date.com website[[]]. 
+ []
+
+
+Overfull \hbox (87.52834pt too wide) in paragraph at lines 97--102
+\T1/lmr/m/n/12 (-20) da-men-tal pro-gram-ming de-fi-cien-cies of its cre-ator. 
+[[]]
+ []
+
+
+Class scrartcl Warning: incompatible usage of \@ssect detected.
+(scrartcl)              You've used the KOMA-Script implementation of \@ssect
+(scrartcl)              from within a non compatible caller, that does not
+(scrartcl)              \scr@s@ct@@nn@m@ locally.
+(scrartcl)              This could result in several error messages on input li
+ne 103.
+
+[21]
+
+Class scrartcl Warning: incompatible usage of \@ssect detected.
+(scrartcl)              You've used the KOMA-Script implementation of \@ssect
+(scrartcl)              from within a non compatible caller, that does not
+(scrartcl)              \scr@s@ct@@nn@m@ locally.
+(scrartcl)              This could result in several error messages on input li
+ne 115.
+
+) [22]
 \openout2 = `PostMortem.aux'.
 
  (./PostMortem.tex
@@ -937,22 +983,22 @@ Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              This could result in several error messages on input li
 ne 1.
 
-) [22
+) [23
 
 
-] (./document.bbl [23
+] (./document.bbl [24
 
-]) [24] (./document.aux (./Abstract.aux)
+]) [25] (./document.aux (./Abstract.aux)
 (./Incubation.aux) (./Outbreak.aux) (./Autopsy.aux) (./Convalescence.aux)
 (./Evolution.aux) (./PostMortem.aux)) ) 
 Here is how much of TeX's memory you used:
- 9543 strings out of 494910
- 146888 string characters out of 6179836
+ 9547 strings out of 494910
+ 146932 string characters out of 6179836
  322913 words of memory out of 5000000
  12395 multiletter control sequences out of 15000+600000
- 102390 words of font info for 156 fonts, out of 8000000 for 9000
+ 102564 words of font info for 158 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 47i,11n,52p,797b,360s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 47i,12n,52p,797b,360s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-
 ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fon
 ts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</
@@ -964,10 +1010,10 @@ mf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.
 pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/
 type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb
 ></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb>
-Output written on document.pdf (27 pages, 285076 bytes).
+Output written on document.pdf (28 pages, 291794 bytes).
 PDF statistics:
- 146 PDF objects out of 1000 (max. 8388607)
- 103 compressed objects within 2 object streams
+ 149 PDF objects out of 1000 (max. 8388607)
+ 105 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  31233 words of extra memory for PDF output out of 35830 (max. 10000000)
 
