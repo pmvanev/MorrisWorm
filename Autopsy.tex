@@ -4,7 +4,7 @@ In the wake of the Morris Worm outbreak, several
 publications presented in depth analyses of the worms
 anatomy based on disassembled worm code. This section explores the worm's
 anatomy as presented by these dissections at relatively shallow depth. Readers interested
-in more detail are encoured to read the following publications on which the
+in more detail are encouraged to read the following publications, on which the
 entirety of this section is based: 
 \cite{seeley_tour_1989}
 \cite{spafford_crisis_1989}
@@ -12,12 +12,10 @@ entirety of this section is based:
 \cite{eichin_microscope_1989}
 
 The Morris Worm is written in C. Its head consists of a 99 line ``bootstrap''
-or ``vector'' program
-\footnote{
+or ``vector'' program\footnote{
 also called a ``grappling hook'', or the ``l1'' program because it is found in 
 the file \textit{l1.c} \cite{spafford_crisis_1989}
-}
-, used to download the main body of the worm and get it up
+}, used to download the main body of the worm and get it up
 and running on a new machine. About 3200 lines of C code comprise the worm's
 body. It contains code to help the worm preserve itself, discover and infect
 new machines, crack user passwords, and spread. It also contains unused code
@@ -30,8 +28,8 @@ numerous software bugs and mistakes.
 The worm comes equipped with several mechanisms disguise itself and even fend
 off potential attacks from system administrators. Upon infection, a new worm
 reads any necessary files into memory and deletes them so that it leaves no
-trace on disk before zeroing out its argument list. It then changes its name to
-\textit{sh} and masquerades as a harmless shell process. To continue to
+trace on disk. It then zeroes out its argument list and changes its name to
+\textit{sh} to masquerade as a harmless shell process. To continue to
 camouflage itself throughout its lifecycle, the worm occassionally uses the
 UNIX \textit{fork} system call to change its process I.D. This also renews the
 long running worm's cpu allocation priority in the eyes of the UNIX
@@ -41,12 +39,12 @@ unnoticed, but hiding is just one of its defense mechanisms.
 
 The worm also employs measures to obscure itself in case of its discovery. A
 basic form of encryption based on the logical exclusive or operation
-encodes its disk files. The worm disables core files to protect against
-accidental core dumps in the event of a mistake, or even forced core dumps by a
-prodding system administrator. Unnecessary symbols are removed from the worm
-program symbol table to make analysis more difficult in the event that a worm is
-captured. These hurdles serve to passively obstruct worm analysis, but the worm
-takes its own security a step further.
+encodes its disk files before they are deleted. The worm disables core files to
+protect against accidental core dumps in the event of a mistake, or even forced
+core dumps by a prodding system administrator. Unnecessary symbols are removed
+from the worm program symbol table to make analysis more difficult in the event
+that a worm is captured. These hurdles serve to passively obstruct worm
+analysis, but the worm takes its own security a step further.
 
 The Morris Worm implements its own active authentication.
 When the bootstrap program downloads the worm body to a newly infected host, the client
@@ -54,13 +52,12 @@ program authenticates the worm server via the exchange of a ``magic number'', a
 random number that both parties agree upon prior to communication. 
 This prevents anyone from battling the worm with imposter worms. Equipped with
 tools to hide on a host system, change its appearance, and actively authenticate
-other worms, a worm program is reasonably capable of fending for itself.  With
-multiple methods of self preservation at its disposal, the worm can focus on
-its other work.
+other worms, a worm program is reasonably capable of fending for itself,
+therefore free to focus on its other work.
 
 \subsection*{Password Cracking}
 Once it has infiltrated a system, the worm opens the password file
-containing hashed account passwords and begins to try to crack them, guessing
+containing hashed account passwords and begins to try to crack them by guessing
 different passwords, hashing them, and comparing the results to the entries in
 the password file. The worm generates guesses for user passwords in the
 following ways:
@@ -70,15 +67,14 @@ following ways:
 default passwords, or even to enter a password for a new account. The worm is
 therefore able to infiltrate some accounts with a blank password or other
 default passwords like \textit{admin}.
-\item To remember passwords more easily, users often choose simple, easy to
+\item Users often choose simple, easy to
 guess passwords. The worm tries very simple passwords, like the user name or the
-user name backwards, in the hopes that it can easily guess a user's
-password. The worm also carries with it a miniature dictionary of
+user name backwards. The worm also carries with it a miniature dictionary of
 known commonly used passwords to try. 
 \item If none of the previous methods work, the worm begins to try all
 of the words in the UNIX online dictionary, both capital and lowercase.
 \item For convenience, users often use the same password on multiple
-machines. If this is the case, once the worm has a user's password on one
+machines. In this case, once the worm has a user's password on one
 machine, it tries to login as the user with the same password on neighboring
 machines.
 \end{itemize}
@@ -161,10 +157,10 @@ connect, etc.
 \textit{ernie.berkeley.edu} over a TCP socket, which, of course, doesn't work.
 \item In some places, the code passes incorrect arguments to functions, like a
 \textit{struct} instead of a pointer to the \textit{struct}.
-\item Several bugs exits in the worm's reproduction exploitations that make it
+\item Several bugs exist in the worm's reproduction exploitations that make it
 less effective than it could have been. 
 \item If the worm code doesn't compile fast enough on a newly infected system,
-error exiting doesn't erase all files, leaving traces of the worm leftover on
+error exiting doesn't erase all files, leaving traces of the worm on
 disk.
 \end{itemize}
 
