@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.24)  8 DEC 2017 19:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.24)  10 DEC 2017 12:21
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -971,7 +971,7 @@ Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              This could result in several error messages on input li
 ne 115.
 
-) [22]
+[22]) [23]
 \openout2 = `PostMortem.aux'.
 
  (./PostMortem.tex
@@ -983,12 +983,12 @@ Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              This could result in several error messages on input li
 ne 1.
 
-) [23
+) [24
 
 
-] (./document.bbl [24
+] (./document.bbl [25
 
-]) [25] (./document.aux (./Abstract.aux)
+]) [26] (./document.aux (./Abstract.aux)
 (./Incubation.aux) (./Outbreak.aux) (./Autopsy.aux) (./Convalescence.aux)
 (./Evolution.aux) (./PostMortem.aux)) ) 
 Here is how much of TeX's memory you used:
@@ -1010,10 +1010,10 @@ mf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.
 pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/
 type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb
 ></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb>
-Output written on document.pdf (28 pages, 291922 bytes).
+Output written on document.pdf (29 pages, 293308 bytes).
 PDF statistics:
- 149 PDF objects out of 1000 (max. 8388607)
- 105 compressed objects within 2 object streams
+ 152 PDF objects out of 1000 (max. 8388607)
+ 107 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  31233 words of extra memory for PDF output out of 35830 (max. 10000000)
 
