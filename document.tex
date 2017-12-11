@@ -21,6 +21,10 @@
 \usepackage{sectsty}
 \allsectionsfont{\centering \normalfont\scshape}
 
+%%%% TEMP
+%\usepackage{color}
+%\color{blue}
+
 
 %%% Custom headers/footers (fancyhdr package)
 \usepackage{fancyhdr}
@@ -92,8 +96,10 @@ Phil Van Every\\[-3pt]		\normalsize
 \include{PostMortem}
 
 %%% Bibliography
+\newpage
+\renewcommand{\thepage}{}
 \nocite{*} 
-\bibliographystyle{plainnat}
+\bibliographystyle{IEEEtran}
 \bibliography{References}
 
 %%% End document

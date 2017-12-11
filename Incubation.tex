@@ -6,60 +6,61 @@ The Internet's massive size and popularity today make it hard to imagine its
 humble beginning. What we now know as the Internet began as a research project
 sponsored by the Defense Advanced Research Project Agency (DARPA) called the
 Arpanet. On the day of its birth in December, 1969, the Arpanet consisted of
-only four connected nodes: UCLA, SRI, UCSB, and the University of Utah. Lines
-of communication between these nodes were ``two million times slower than
-today's fastest networks'' \cite{strawn_masterminds_2014}. 
+only four connected nodes at the University of California in Los Angeles, the
+Stanford Research Institute, the University of California in Santa Barbara, and
+the University of Utah.
+Lines of communication between these nodes were ``two million times slower than
+today's fastest networks.''\cite{strawn_masterminds_2014} 
 
 The Arpanet opened the door for a flurry of new research projects. New ideas
-grew into numerous applications like file sharing, remote logon, and email. Soon, more
-nodes and networks were added. By the mid 1980s, the growth and success
-of the Arpanet prompted the National Science Foundation to build a network to
-connect research universities to some of its newly built supercomputer centers. 
+grew into numerous applications such as file sharing, remote logon, and email.
+Soon, more nodes and networks were added. By the mid 1980s, the growth and success
+of the Arpanet prompted the National Science Foundation (NSF) to build a network
+connecting research universities to some of its newly built supercomputer
+centers.
 This new network came to be known as the NSFnet.
 It made internetworking a prolific research topic,
 eventually connecting ``more than 2,000 universities and colleges and a
-number of high tech companies'' \cite{strawn_masterminds_2014}. Ultimately, the
+number of high tech companies.''\cite{strawn_masterminds_2014} Ultimately, the
 1990s would see the NSFnet becoming commercialized into the Internet that we
-know today, but not without some growing pains. This paper focuses on one of the
-earliest and most vehement growing pains the developing internet\footnote
-{
+know today, but not without some growing pains. The Morris
+Worm\footnote{also called the Internet Worm} was one of the earliest and most
+vehement growing pains the developing internet\footnote {
 The above summary of the
 birth of the Internet used the names ``Arpanet'', ``NSFnet'', and ``Internet''
-for various stages in a growth of a widely connected network of computers. For
+for various stages in the growth of a widely connected network of computers. For
 simplicity, the rest of this paper will collectively refer to all of these
 stages as the ``internet''.
 } 
-would face,
-known initially as the ``Internet Worm'' and later as the ``Morris Worm''.
+would face.
 
-
-An important detail in the internet's conception and early life is the
+An important detail in the internet's conception and early life was the
 attitude of its creators.
-This internet was developed by researchers focused on
-optimizing its efficiency, not its security. Some security
+The internet was developed by researchers focused on
+optimizing its efficiency. Some security
 measures were built in as an afterthought, but security was not woven into
 the core fabric of the internet or its applications. As the internet
 grew, researchers who used and designed
-it were generally assumed to have good intentions. According to
-\cite{lee_washpost_2013}, ``\ldots the Internet was like a small town where
-people thought little of leaving their doors unlocked. Internet security was
+it were generally assumed to have good intentions. ``The Internet was
+like a small town where people thought little of leaving their doors unlocked. Internet security was
 seen as a mostly theoretical problem, and software vendors treated security
-flaws as a low priority.'' The same article quotes the sentiments of Dr. Eugene
-Spafford \footnote{
+flaws as a low priority.''\cite{lee_washpost_2013} Lee\cite{lee_washpost_2013}
+quotes the sentiments of Dr.
+Eugene Spafford \footnote{
 Dr. Spafford is a computer security researcher and professor at Purdue
-University. He is also executive director of the Purdue's Center for Education
+University. He is also executive director of Purdue's Center for Education
 and Research in Information Assurance and Security and an internationally
 recognized expert in computer security.}:
 
 \begin{quote}
 The majority of people had some tie to computation for their jobs. I wouldn't
 say that we trusted each other, but there was more a community sense of caring
-for the stability and appropriate use of the computing systems\ldots \\
+for the stability and appropriate use of the computing systems\ldots. \\
 There was no such thing as a firewall back then. You didn't have people who were
 vandals or anarchists or criminals as much. 
 \end{quote}
 
-Thus, there was no perceived need for strong security. This very lack of
+A lack of
 security would ultimately provide a temperate environment for the incubation of
 a virulent infection: the Morris Worm.
 
@@ -67,10 +68,10 @@ The remainder of this
 paper tunnels through the worm hole in history that the Morris Worm
 has left behind. First, it covers \textit{what} happened during the worm's
 outbreak and eradication. Second, it recounts the discoveries that were made
-by researchers about \textit{how} the worm works upon its dissection. Third,
+by researchers about \textit{how} the worm works. Third,
 it discusses the \textit{immediate impact} that the worm had on the research
-community and the general public as they convalesced from the infection. Fourth,
-it traces the worm's \textit{long term influence} on the evolution of future
+community and the general public as they convalesced after the infection.
+Fourth, it traces the worm's \textit{long term influence} on the evolution of future
 worms and shifting cyber-security perspectives. Finally, the paper
 provides a post mortem synthesis on the quality and depth of the worm's overall
 impact on the history of computer security. 

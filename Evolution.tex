@@ -25,7 +25,7 @@ Several subsequent worms have found new ways to capitalize on some of these same
 exploits.
 \subsubsection*{Code Red}
 In the summer of 2001, the Code Red Worm infected about 500,000 servers.
-\cite{fisher_living_2002} calls
+Fisher\cite{fisher_living_2002} calls
 the worm ``a direct descendant of Morris' creation''.
 It spreads by exploiting a known buffer overflow vulnerability in Microsoft
 Internet Information Services (IIS) servers. When the first infection was
@@ -33,9 +33,9 @@ discovered, a patch for the IIS vulnerability had already existed for a
 month\cite{fisher_code_2001}. After infecting a new host, the worm scans the
 internet for other hosts running the same IIS server to infect. 
 
-Much like the Morris Worm, the Code Red contains several telling bugs, including
-a bug in the random IP address generator that it uses to scan the internet. In
-fact, \cite{berghel_code_2001} points out that
+Much like the Morris Worm, the Code Red Worm contains several telling bugs,
+including a bug in the random IP address generator that it uses to scan the internet.
+Berghel\cite{berghel_code_2001} points out
 \begin{quote}
 An interesting byproduct of the bug in the original Code Red was that instead 
 of creating random paths to each infected server, Code Red infected each new
@@ -45,25 +45,25 @@ hiding one's tracks (should the perpetrator be identified, perhaps we should
 give him or her an honorary ``F'' in software design).
 \end{quote}
 
-Unlike the Morris Worm, the Code Red Worm does more than just reproduce. It also
-contains code to display mischevious messages in web browsers on infected hosts,
-and even to launch a distributed denial of service attack (DDOS) on the White
-House website on July 19$^{th}$ 2001. Fortunately, researchers found that code
-in the worm designed to flood the White House website with traffic used the
-site's actual IP address, rather than the URL ``Whitehouse.gov''. This meant
-that the planned attack could be easily thwarted by simply changing the IP
+Unlike the Morris Worm, the Code Red Worm did more than just reproduce. It also
+contained code to display mischevious messages in web browsers on infected
+hosts, and even to launch a distributed denial of service attack (DDOS) on the White
+House website on July 19$^{th}$ 2001. Fortunately, researchers found that
+the code in the worm designed to flood the White House website with traffic used
+the site's actual IP address, rather than the URL ``Whitehouse.gov''. The planned
+attack was therefore easily thwarted by changing the IP
 address\cite{berghel_code_2001}.
 
 The attack incited a familiar discussion about who is to blame for security
-vulnerabilites. \cite{berghel_code_2001} relates:
+vulnerabilites. Berghel\cite{berghel_code_2001} relates:
 \begin{quote}
 Many feel that the responsibility belongs to the administrators who failed to
-heed repeated warnings to patch their systems\ldots
+heed repeated warnings to patch their systems\ldots.
 Others believe the real culprits are software vendors that release unsecure
 products and government agencies that are slow to react to major security threats.
 \end{quote}
 
-Notice that blame for the attack seems to have been cast upon almost everyone
+Notice that blame for the attack was cast upon almost everyone
 except the actual creator of the Code Red Worm.
 
 \subsubsection*{Slammer}
@@ -74,12 +74,12 @@ exploited a buffer overflow vulnerability in Microsoft SQL Server 2000. As with
 previous worms, the vulnerability that Slammer exploited was well known. A
 patch had even been released 6 months prior to the worm's release, but many
 system administrators hadn't applied it. It scanned random IP addresses on the
-web to discover new victim machines to infect
-\cite{tynan_dawn_2003}\cite{panko_slammer:_2003}.
+web to discover new victim machines to
+infect\cite{tynan_dawn_2003}\cite{panko_slammer:_2003}.
 
 The finger of blame was again pointed at almost everyone but
-its creator. \cite{schultz_security_2003} notes that ``Microsoft will undoubtedly
-continue to hold users at fault for not installing
+its creator. Schultz\cite{schultz_security_2003} notes that ``Microsoft will
+undoubtedly continue to hold users at fault for not installing
 appropriate patches, but the real problem is the
 bug-filled software that Microsoft and other
 vendors have continually produced over the
@@ -95,28 +95,28 @@ website\cite{bailey_blaster_2005}.
 
 As with previous worms, it contains bugs and other poor coding practices that
 reveal fundamental programming deficiencies of its creator. 
-\cite{bailey_blaster_2005} points out that its repeated and redundant re-seeding
-of the random number generator that it uses ``indicates that the worm author
+Bailey\cite{bailey_blaster_2005} points out that its repeated and redundant
+re-seeding of the random number generator that it uses ``indicates that the worm author
 significantly lacks understanding of random number generators.''
 
 \subsubsection*{Conficker}
 The Conficker Worm began to spread in 2008 and infected millions of Windows
-computers. It does do something new, however. After
+computers. It does do something new: After
 infecting a host, it opens a communication channel and awaits further
 instructions, effectively turning the host machine into a ``zombie''. 
-\cite{lee_washpost_2013} suggests that its authors have ``finally achieved
+Lee\cite{lee_washpost_2013} suggests that its authors have ``finally achieved
 something like Morris's original, unrealized vision of using a worm to create a
 vast network of computers operating under the control of the malware's author.''
 A network of these zombie computers is known as a ``botnet'' and ``unscrupulous
 individuals use them to send spam e-mail messages, overwhelm Web sites with
-traffic, or perform other nefarious tasks''\cite{lee_washpost_2013}.
+traffic, or perform other nefarious tasks.''\cite{lee_washpost_2013}
 		
 \subsection*{Evolved Awareness and Perception}
 \addcontentsline{toc}{subsection}{Evolved Awareness and Perception}
 
-In the decades after the Morris Worm crisis computers have become ubiquitous.
+In the decades after the Morris Worm crisis, computers have become ubiquitous.
 As a result, people have generally become more computer literate. Unfortunately,
-this hasn't necessarily led to improved awareness of computer security, and many of the
+this hasn't necessarily led to improved awareness of computer security and many of the
 issues brought to light by the Morris Worm incident are just as relevant now as
 they were in 1988. As demonstrated in previous sections, new cyber attacks
 written by sloppy programmers continue to exploit old vulnerabilities that
@@ -125,29 +125,28 @@ simply haven't been patched yet.
 The victim shaming mentality seen after the Morris Worm continues
 to prevail as vendors blame administrators for not applying patches and
 updates, administrators blame users for using weak passwords, and users blame
-vendors for releasing vulnerable software, all seeming to forget about author
-of the cyber attack. Perhaps this is because the the internet is no longer
+vendors for releasing vulnerable software, all seeming to forget about the
+author of the cyber attack. Perhaps this is because the the internet is no longer
 thought of as a friendly place like it was in 1988 before the Morris Worm was
 unleashed. Instead, people now generally assume that attackers are out there
 waiting to steal our information and compromise our systems.
 These attackers are less often regarded as brilliant and more often
-regarded as despicable frauds out to steal financial information. In this modern
-internet where it is assumed that creepy, nefarious attackers are out there just
-waiting to infiltrate systems, society expects that system administrators and
-personal computer users should employ every conceivable security measure. This
-increased pressure makes it that much easier to blame victims, rather than
-attackers when security breaches occur.
+regarded as despicable frauds out to steal financial information. As a
+result, society expects that system administrators and personal computer users
+should employ every conceivable security measure. The increased pressure makes
+it that much easier to blame victims, rather than attackers, when security
+breaches occur.
 
 The CFAA is still being expanded to deal with new types of cyber crime
 \cite{adams_controlling_1996}. The CERT also continues to grow and respond to
 computer security crises of all shapes and sizes. While it handled just a few
 incidents per year after its creation, by 1993 it was handling thousands of
 incidents\cite{fithen_cert_1994}. Furthermore, many new crisis response teams
-have been established. In fact, the procedure to set up and maintain a Computer
-Security Incident Response Teams (CSIRT) has been well studied and formalized
+have been established. The procedure to set up and maintain a Computer
+Security Incident Response Team (CSIRT) has been well studied and formalized
 and many organizations employ their own internal CSIRTs. 
 
-As \cite{lee_washpost_2013} sums up:
+As Lee\cite{lee_washpost_2013} sums up:
 \begin{quote}
 Today, the Internet is infested with malware that works a lot like the software
 Morris set out to build a quarter-century ago. And the community of Internet

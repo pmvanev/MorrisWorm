@@ -7,20 +7,19 @@ Email communication also took a hit in cases where networks were shutdown to
 quarantine the spread of the infection\cite{seeley_tour_1989}. For several days,
 a large portion of the internet and its connected computers were unuseable.
 
-This opportunity cost the Morris Worm crisis caused is rather shallow, however,
-when compared to the reaction that the worm illicited. The phase in which one
-recovers after illness caused by an infectious disease is called \textit{convalescence}. This
-section addresses the recovery of the computing community and the
-general public through their reponses to the worm crisis.
+The phase in which one recovers after illness caused by an infectious disease is
+called \textit{convalescence}. This section addresses the recovery of the
+computing community and the general public through their reponses to the worm
+crisis.
 
 \subsection*{Awareness and Perception}
 \addcontentsline{toc}{subsection}{Awareness and Perception}
-The Morris Worm crisis elevated awareness of computing, the internet, and
-security. Prior to the crisis, much of the general public didn't even
-know about the internet, and therefore could not fathom the impact that a
+The Morris Worm crisis elevated awareness of the internet and
+computer security. Prior to the crisis, much of the general public didn't even
+know about the internet and therefore could not fathom the impact that a
 cyber attack could have. Aware of some of the very
 vulnerabilities that the worm exploited, the computing community knew that
-someone one \textit{could} set off a catastrophic cyber attack, but didn't
+someone \textit{could} set off a catastrophic cyber attack, but didn't
 suspect that anyone \textit{would}. The computer literate and computer agnostic
 were both faced with questions regarding the ethical nature of what Robert
 Morris had done.
@@ -32,24 +31,24 @@ new vocabulary words for people who hadn't heard them before. The Morris
 Worm had thrust the concepts of large communications networks linking computers
 and attacks against such networks into the spotlight. People began digesting the
 new ideas, at times rather comically.
-\cite{lee_washpost_2013} quotes, from an
+Lee\cite{lee_washpost_2013} quotes, from an
 interview with Dr. Spafford:
 \begin{quote}
 ``I got one call from a newspaper in Southern Indiana,'' Spafford says. ``The
 reporter asked me, in all earnestness, `Do our readers need to worry about
 catching this virus?' ''
 \end{quote}
-\cite{marsan_morris_2008} quotes, from an
+Marsan\cite{marsan_morris_2008} quotes, from an
 interview with Steve Bellovin, a Computer Science Professor at Columbia
 University:
 \begin{quote}
-``The Morris worm was the first time most people ever heard the word 'Internet,'''
-Bellovin says. ``For most people, it was a novelty, a strange and wondrous
+``The Morris worm was the first time most people ever heard the word 'Internet,'
+'' Bellovin says. ``For most people, it was a novelty, a strange and wondrous
 world \ldots and one rogue operator could take it down. Nobody had ever heard
 of the Internet unless you were a computer scientist.''
 \end{quote}
 The news coverage over the next several months would reinforce a growing public
-awareness of two new ideas: that a huge communications network of connected
+awareness of two new ideas: a huge communications network of connected
 computers exists and it can be used to perpertrate massive and destructive
 cyber attacks.
 It is curious to ponder that the existence of the internet and its
@@ -59,21 +58,18 @@ potential for misuse both dawned on the public at the same time.
 Researchers were faced with some realizations of their own. While aware of the
 possibility of security breaches, computer scientists didn't appreciate the
 magnitude of the damage that could be caused or the likelihood that someone
-would actually launch a massive attack. \cite{seeley_tour_1989} points out that
-the vulnerabilities exploited by the Morris worm were already known to the
-computing community. In fact, Morris himself had warned people about them.
-\cite{spafford_internet_1989} relates that ``\ldots at a recent meeting, 
-Professor Rick Rashid of Carnegie-Mellon University was heard to claim that
-Robert T . Morris, the alleged author of the Worm, had revealed the fingerd
-bug to system administrative staff at CMU well over a year ago.'' Aware of many
-existing security vulnerabilities including the very vulnerabilities that
+would actually launch a massive attack. The vulnerabilities exploited by the
+Morris worm were already known to the computing community. Morris himself
+had warned people about some of them\cite{spafford_internet_1989} a year before
+releasing the worm. Aware of many
+existing security vulnerabilities, including the very vulnerabilities that
 the Morris Worm exploited, system administrators still considered their risk
 for a cyber attack to be miniscule. The Morris Worm showed them otherwise. 
 
 Even amongst the computer literate, many people didn't know how to classify
 the attack without first developing a heightened awareness of cyber attack
 taxonomy. Many of the publications generated in response to the crisis opened 
-by addressing this issue. \cite{spafford_internet_1989-1} points out:
+by addressing this issue. Spafford\cite{spafford_internet_1989-1} points out:
 \begin{quote}
 There seems to be considerable variation in the names applied to the program
 described here. Many people have used the term worm instead of virus based on its
@@ -82,26 +78,24 @@ experience  to date has been only with that form of security problem. This usage
 has been reinforced by quotes from computer managers and programmers also
 unfamiliar with the difference.
 \end{quote}
-\cite{eichin_microscope_1989} obstinately asserted that the internet
-attack was caused by a ``virus''
-\footnote{In particular,
-\cite{eichin_microscope_1989} asserts the Morris Worm should be classified as a
-``lysogenetic'' virus based on its behavior with respect to its host.}
-. The rest of the research community classified it as a ``worm'', stating that
-viruses instert their code into other programs and are passively executed when
-the host program runs while worms are standalone programs and use system
-resources to actively spread themselves \cite{seeley_tour_1989,
-spafford_internet_1989, spafford_internet_1989-1}. The Morris Worm 
-incited this new appreciation for semantic nuance in cyber attack
-classification. 
+Eichen and Rochlis\cite{eichin_microscope_1989} obstinately asserted that the
+internet attack was caused by a virus\footnote{In particular,
+Eichen and Rochlis\cite{eichin_microscope_1989} asserts the Morris Worm should
+be classified as a ``lysogenetic'' virus based on its behavior with respect to
+its host.} . The rest of the research community classified it as a worm,
+stating that viruses instert their code into other programs and are passively
+executed when the host program runs while worms are standalone programs and use
+system resources to actively spread
+themselves\cite{seeley_tour_1989}\cite{spafford_internet_1989}\cite{spafford_internet_1989-1}.
+The Morris Worm incited this new appreciation for semantic nuance in cyber attack classification.
 
 Upon inspection of the Morris Worm, researchers realized that the crisis could 
 have been much worse. The worm could have deliberately performed malicious
-actions on infected machines, like deleting files and trafficking passwords. It
-could have been used as a mechanism to spread viruses. It could have installed
+actions on infected machines, such as deleting files and trafficking passwords.
+It could have been used as a mechanism to spread viruses. It could have installed
 back doors or trojan horses. Finally, it could have done all of this more
 covertly, making it much harder to discover, diagnose, and destroy.
-\cite{spafford_crisis_1989} points out that
+Spafford\cite{spafford_crisis_1989} points out that
 \begin{quote}
 Entire businesses are now dependent, wisely or not, on the undisturbed
 functioning of computers. Many people's careers, property, and lives may be
@@ -115,24 +109,25 @@ large needed a more robust immune system.
 Faced with the first major cyber attack of this nature, researchers and the
 public developed a broad spectrum of contrasting opinions about Morris and his
 behavior. People began to debate about whether Morris was a criminal.
-There was also discussion about whether he was a genius, or ``computer whiz''. 
+There was also discussion about whether he was a genius or ``computer whiz''. 
 
 The more immediate of these two questions concerned the ethical
-nature of Morris' actions, and, by extension, of cyber attack perpetrators in
+nature of Morris' actions and, by extension, of cyber attack perpetrators in
 general. While some felt Morris was a vicious criminal that should be
 punished as harshly as possible, others argued that he was a hero for
-demonstrating security flaws. \cite{spafford_crisis_1989} observes that 
+demonstrating security flaws. Spafford\cite{spafford_crisis_1989} observes that 
 \begin{quote}
 One oft- expressed opinion, especially by those individuals who believe the
 worm release was an accident or an unfortunate experiment, is that the author
 should not be punished. Some have gone so far as to say that the author should
-be rewarded\ldots
+be rewarded\ldots.
 The other extreme school of thought holds that the author should be severely
 punished, including a term in a federal penitentiary.
 \end{quote}
 
-Ultimately, a middle and more grounded opinion prevailed. The Cornell Commision
-that investigated Morris' actions as a Cornell student determined that 
+Ultimately, a middle and more grounded opinion prevailed. The Cornell
+Commision\cite{eisenberg_cornell_1989} that investigated Morris' actions as a
+Cornell student determined that
 \begin{quote}
 Sentiment among the computer science professional community appears to favor
 strong disciplinary measures for perpetrators of acts of this kind. Such
@@ -140,10 +135,10 @@ disciplinary measures, however, should not be so stern as to damage permanently
 the perpetrator's career.
 \end{quote}
 
-This sentiment is echoed in \cite{spafford_crisis_1989}:
+Spafford\cite{spafford_crisis_1989} echoes this sentiment:
 \begin{quote}
 \ldots it would not serve us well to overreact to this particular incident.
-However, neither should we dismiss it as something of no consequence\ldots
+However, neither should we dismiss it as something of no consequence\ldots.
 Furthermore, we should be wary of setting dangerous precedent for this kind of
 behavior. Excusing acts of computer vandalism simply because the authors claim
 there was no intent to cause damage will do little to discourage repeat
@@ -152,37 +147,36 @@ offenses, and may, in fact, encourage new incidents.
 
 Another question of interest brought to light by the worm crisis concerned the
 intellectual prowess associated with cyber attacks. While the public 
-envisioned as a geniuse who flexed an advanced intellect and
+envisioned Morris as a genius who flexed an advanced intellect and
 knowledge of computer science to perpetrate a cunning attack, the
 academic community was quick to point out the fallacy in such thinking.
-\cite{spafford_crisis_1989} asserts thats ``mastery of computer science and
-computer engineering now involves a great deal more than can be shown by using
+Spafford\cite{spafford_crisis_1989} asserts thats ``mastery of computer science
+and computer engineering now involves a great deal more than can be shown by using
 intimate knowledge of the flaws in a particular operating system.'' The Cornell
-Commission report points out that ``Although the worm was technically
-sophisticated, its creation required dedication and perseverance rather than
-technical brilliance.'' Where the underinformed and computer
-illiterate saw technological mastery, educated and experienced members of the
-computing community saw cheap hacks that lacked any substantive creativity or
-insight.
+Commission\cite{eisenberg_cornell_1989} report points out that ``Although the
+worm was technically sophisticated, its creation required dedication and
+perseverance rather than technical brilliance.'' Where the underinformed and
+computer illiterate saw technological mastery, educated and experienced members
+of the computing community saw cheap hacks that lacked any substantive
+creativity or insight.
 
 A final question of interest that came up involved accountability for the
-incident. While it seemed obvious to some that Morris, the sole perpetrator of
-the attack, was responsible for the damage that his worm had caused, others
-attempted to redirect the blame. It is an unfortunate tendency in our society to
-blame perpetuation of many types of crime on the victim, either subtly or
-overtly. Computer crime is no different in this regard. In the wake of the
-Morris Worm incident, much of the public attempted to place blame on network
+incident. While it seemed obvious to some that Morris was responsible for the
+damage that his worm had caused, others attempted to redirect the blame. It is
+an unfortunate tendency in our society to blame many crimes
+on their victims. Computer crime is no exception. In the wake of the Morris
+Worm incident, much of the public attempted to place blame on network
 administrators and computer users who were using vulnerable versions of the
-software that the worm exploited. The research
-community, speaking from an experienced, educated, and
-rational platform, was quick to point out fallacy in misplacing blame.
-For example, \cite{spafford_crisis_1989} observes that
+software that the worm exploited. The research community, speaking from an
+experienced, educated, and rational platform, was quick to point out fallacy in
+misplacing blame.
+For example, Spafford\cite{spafford_crisis_1989} observes that
 \begin{quote}
 The claim that the victims of the worm were somehow responsible for the
 invasion of their machines is also curious. The individuals making this claim
 seem to be stating that there is some moral or legal obligation for computer
 users to track and install every conceivable security fix and mechanism
-available\ldots
+available\ldots.
 To attempt to blame these individuals for the success of the worm is equivalent
 to blaming an arson victim for the fire because she didn't build her house of
 fireproof metal.
@@ -209,35 +203,37 @@ existing countermeasures and the development of important new ones.
 Morris was tried and convicted as a felon under the CFAA. He plead guilty and
 publicly apologized for the incident. It was clear that he was the worm's
 author. It was also apparent that he hadn't intended to do the major damage that
-he did, and as a result he didn't serve any prison time. Instead, he was
-fined \$10,000 and sentenced to three years probration and 400 hours of
-community service\cite{lee_washpost_2013}. This seems to reflect the sentiment
+he had done and as a result he didn't serve any prison time. Instead, he was
+fined \$10,000 and sentenced to three years probation and 400 hours of
+community service\cite{lee_washpost_2013}. This reflects the sentiment
 expressed by academics above: that he should be punished, but not too severely.
-This helped to establish the precedent that even accidental cyber crime would be
-taken seriously in the eyes of the law. It also set the precedent that the
-internet fell within the purview of the CFAA\cite{adams_controlling_1996}. 
+Morris' conviction demonstrated that even accidental cyber
+crime would be taken seriously in the eyes of the law. It also set the
+precedent that the internet fell within the purview of the
+CFAA\cite{adams_controlling_1996}.
 
 \subsubsection*{CERT}
 The Morris Worm was aptly contained by a group of researchers and
 system administrators that autonamously came together. However, the
 computing community recognized the need for a more formal approach to computer
-system crisis response. An National Computer Security Center (NCSC) post-mortem
+system crisis response. A National Computer Security Center (NCSC) post-mortem
 workshop issued a recommendation that ``that a formal crisis center be
 established to deal with future incidents and to provide a formal point of
-contact for individuals wishing to report problems'' \cite{spafford_crisis_1989}.
-ARPA installed the Computer Emergent Response Team Coordination Center
-as part of the Software Engineering Institute at Carnegie Mellon University as
-the first official internet crisis management center in direct response to the
-Morris Worm\cite{fithen_cert_1994}.
+contact for individuals wishing to report problems.''\cite{spafford_crisis_1989}
+ARPA installed the Computer Emergent Response Team (CERT) at Carnegie Mellon
+University as the first official internet crisis management center in direct
+response to the Morris Worm\cite{fithen_cert_1994}.
 
 \subsubsection*{Computer Security Research}
-The worm crisis invigorated the field of Computer Security. This is cleary
-evidence by the numerous publications it generated. Papers like
-\cite{eichin_microscope_1989} began using the incident as a platform to discuss
+As evidenced by the numerous publications it generated, the worm crisis
+invigorated the field of Computer Security.
+Papers like
+Researchers began using the incident as a platform to discuss
 underlying security principles and best practices, including arguments for
-stronger passwords, personnel secruity, and a software vulnerability patching.
+stronger passwords, personnel secruity, and a software vulnerability
+patching\cite{eichin_microscope_1989}.
 Computer Security suddently gained elevated legitimacy as a research field.
-\cite{marsan_morris_2008} quotes, from an interview with Dr. Spafford:
+Marsan\cite{marsan_morris_2008} quotes, from an interview with Dr. Spafford:
 \begin{quote}
 ``I had been told by my advisors there was no future in applied computer
 security research,'' Spafford says. ``When this happened, suddenly a whole lot
@@ -246,8 +242,8 @@ controlled, mainframe environment and a different kind of security model needed
 to be observed.''
 \end{quote}
 
-\cite{marsan_morris_2008} goes on to quote from an interview with Eric Allman,
-author of the \textit{sendmail} application:
+Marsan\cite{marsan_morris_2008} goes on to quote from an interview with Eric
+Allman, author of the \textit{sendmail} application:
 \begin{quote}
 ``The Morris worm opened up computer security as a legitimate topic,'' Allman
 says. ``Before that, there were a few people who worked on computer security
