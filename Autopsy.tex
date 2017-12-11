@@ -12,11 +12,11 @@ interested in more detail are encouraged to read \cite{seeley_tour_1989},
 The Morris Worm is written in the C programming language. Its head consists of a
 99 line ``bootstrap'' or ``vector'' program\footnote{
 also called a ``grappling hook'', or the ``l1'' program because it is found in 
-the file \textit{l1.c}\cite{spafford_crisis_1989}
+the file \textit{l1.c}\cite{spafford_crisis_1989}.
 }, used to download the main body of the worm and get it up
 and running on a new machine. The worm's body, about 3200 lines of code,
 contains functions that help the worm preserve itself, discover and infect
-new machines, crack user passwords, and spread. It also contains unused code
+new machines, and crack user passwords. It also contains unused code
 and storage space, as well as
 numerous software bugs and mistakes.
 
@@ -100,29 +100,28 @@ machines. After infiltrating a user account as described in the previous
 section, the worm can use the \textit{rsh} and \textit{rexec} programs to log
 into a remote machine and infect it. The worm seeks out new host machines to
 infect by looking for connected host accounts in
-system tables and user files on an infected machine, or even scanning the
-network for other machines.
+system tables and user files on an infected machine, and by scanning the
+network.
 
 \subsubsection*{finger}
-The finger application gives directory information about users. In 1988, it used
-the C library \textit{gets} function to read an incoming request into a buffer.
+The \textit{finger} application gives directory information about users. In 1988,
+it used the C library \textit{gets} function to read an incoming request into a buffer.
 Even then, this function was known to have a classic buffer overflow
 vulnerability, but programmers often prioritize ease of use and convention over security when
 writing code. The Morris worm exploited this buffer overflow vulnerability,
-writing VAX machine code to create a remote shell into to the buffer and then
+writing VAX machine code to create a remote shell into the buffer and then
 overwriting the program's stack frame so that the remote cpu would execute
 this code when the request finished processing. This buffer overflow exploit
-allowed the worm to spread to any VAX machine running the Berkeley version of the finger server.
+allowed the worm to spread to any VAX machine running the Berkeley version of
+the \textit{finger} server.
 
 \subsubsection*{sendmail}
-The sendmail application provides SMTP email service. The Morris Worm exploits
-a trap door that is intended to be used for debugging in which entering a debug
-command allows one to send commands instead of email to a remote host. The worm uses
-this little known feature in an unintended way, sending an anonymous debug email
-to a remote host with a copy of the bootstrap program and commands to compile and run
-it. 
-
-
+The \textit{sendmail} application provides SMTP email service. The Morris Worm
+exploits a \textit{sendmail} trap door intended to be used for debugging.
+Activated by a debug command, the trap door allows one to send commands instead of email to a remote host. The
+worm uses this little known feature in an unintended way, sending an anonymous
+debug email to a remote host with a copy of the bootstrap program and commands
+to compile and run it.
 
 \subsection*{Maladaptive Traits}
 \addcontentsline{toc}{subsection}{Maladaptive Traits}
@@ -132,14 +131,14 @@ fairly well engineered. However, upon further inspection, researchers found
 numerous instances of poor programming practice and several critical
 bugs that ultimately led to its exposure and subsequent demise.
 
-To avoid infecting the same machine multiple times, the worm 
-intermittently checks for other worms on the same machine. If another worm is
+To avoid infecting a host multiple times, the worm 
+intermittently checks for other worms on the same host. If another worm is
 found, the two perform a virtual coinflip and the loser agrees to self
 terminate.
 However, 1 in 7 times, the loser of the coinflip becomes immortal instead of
 self terminating, perhaps in order to prevent imposter worms planted by network
 administrators from attacking the real worms\cite{spafford_internet_1989}.
-Rather than preventing redundant infection, however, this behavior results in
+This behavior results in
 numerous immortal worms clogging up the same machine. This particular bug is
 what led to the very noticeable latency and crashing symptoms that affected many
 machines on Black Thursday and made the worm rather noticeable.
@@ -152,7 +151,7 @@ which are listed below:
 calls. This means that it could try to access memory that was
 unsuccessfuly allocated, communicate over network connections that failed to
 connect, etc. 
-\item The worm tries to send a UDP packet the a remote user account,
+\item The worm tries to send a UDP packet the remote user account
 \textit{ernie.berkeley.edu} over a TCP socket. UDP packets must be sent
 over UDP sockets, so the packet is never sent.
 \item In some places, the code passes incorrect arguments to functions, like a
@@ -211,7 +210,7 @@ encoded password.''
 
 Perhaps it was Morris' intention to transfer the code containing these
 capabilities in the empty slots in the file table. Lee\cite{lee_washpost_2013}
-speculates that the datagram the worm failed to send to the 
+speculates that the UDP packet the worm attempted to send to the 
 \textit{ernie.berkeley.edu} may have had to do with the development of a
 command center. Had Morris built in this or any other malicious functionality,
 or had he spent more time debugging his code before releasing it, the

@@ -23,17 +23,14 @@ the University of Maryland,
 the University of Utah,
 Stanford,
 the University of Minnesota,
-and the University of North Carolina
-\cite{seeley_tour_1989}
-\cite{spafford_internet_1989-1}.
+and the University of North
+Carolina\cite{seeley_tour_1989}\cite{spafford_internet_1989-1}.
 
-The worm spread faster than even Morris had anticipated. Around
-11 pm and again at 11:30 pm, he contacted Andrew Sudduth and Paul Graham
-\footnote{
-Andrew Sudduth was a friend of Morris'. He and Paul Graham were both
-members of the technical staff at Harvard University's Aiken Computational
-Laboratory\cite{lee_washpost_2013}
-}
+The worm spread faster than even Morris had anticipated. At around
+11 pm and again at 11:30 pm, he contacted Andrew Sudduth and Paul
+Graham\footnote{Andrew Sudduth was a friend of Morris'. He and Paul Graham
+were both members of the technical staff at Harvard University's Aiken
+Computational Laboratory\cite{lee_washpost_2013}.}
 to tell them that he had released the worm and to relate steps that could be
 taken to stop it. Morris also requested that Andrew Sudduth alert the research
 community about the worm and relay how it might be stopped. 
@@ -56,14 +53,13 @@ Thursday November $3^{rd}$ would come to be known as ``Black Thursday.''
 At its peak, the infection is estimated to have spread to around 6,000 machines.
 That is 10\% of the approximately 60,000 computers connected to the internet at
 that time\cite{eichin_microscope_1989}\cite{marsan_morris_2008}. The worm
-targeted systems running 4.2 or 4.3 BSD UNIX and SunOS, causing many of its
-infected hosts to crash.
-Hosts that didn't crash were riddled with processes that appeared to be shells.
+targeted systems running 4.2 or 4.3 BSD UNIX and SunOS. 
+While the worm caused many of its infected hosts to crash, those that didn't
+crash were riddled with processes that appeared to be shells.
 Their process tables, open file tables, and sometimes swap space were exhausted.
 Latency soared as legitimate user processes competed with worm processes for cpu
-time. Logs showed odd activity that wasn't actually being caused by the
-users that they were recording. Finally, strange files were appearing in the
-\textit{/usr/tmp} directory\cite{seeley_tour_1989}\cite{spafford_crisis_1989}.
+time. Logs showed odd and seemingly inaccurate activity. Finally, strange files
+were appearing in the \textit{/usr/tmp} directory\cite{seeley_tour_1989}\cite{spafford_crisis_1989}.
 
 Fortunately, by early Thursday morning the research community had already begun
 fighting back.
@@ -85,27 +81,22 @@ results.
 By 5 am on Thursday, less than 12 hours after the
 worm was first discovered, researchers at Berkely had
 developed a provisional method to halt its spread\cite{spafford_crisis_1989}.
-Black Thursday saw many a researcher and system administrator struggle
-with slow machines and trickling network connectivity, as well as 
-many swift and staggering successes for them.
-They devoloped worm vaccines with impressive speed. 
-Mailing lists, including Dr. Spaffords Phage Mailing List
-\footnote{
-The Phage Mailing List would become the main conduit of communication and source
-of information about the worm both during the worm crisis and in subsequent weeks as Morris
-was prosecuted
-\cite{spafford_crisis_1989}\cite{spafford_internet_1989-1}\cite{lee_washpost_2013}.
+While Black Thursday saw many a researcher and system administrator struggle
+with slow machines and trickling network connectivity, it also saw 
+swift and staggering successes for them.
+Researchers devoloped worm vaccines with impressive speed. 
+Mailing lists, including Dr. Spafford's Phage Mailing List\footnote{
+The Phage Mailing List would become the main conduit of communication about the
+worm both during the worm crisis and in subsequent weeks as Morris was
+prosecuted\cite{spafford_crisis_1989}\cite{spafford_internet_1989-1}\cite{lee_washpost_2013}.
 }, 
 were created to coordinate anti-worm efforts.
 Researchers captured the worm and analyzed its behavior. By the end of the day,
 software patches had been posted to eliminate the vulnerabilities exploited by
-the worm, namely in the \textit{sendmail} and \textit{finger} applications
-\cite{spafford_crisis_1989}
-\cite{seeley_tour_1989}. By the end of the
-day, researchers at Purdue had discovered a
+the worm, and researchers at Purdue had discovered a
 method of stopping the worm without altering
 system utilities\cite{spafford_internet_1989-1}. The solution was simply to
-create a file called \textit{sh} in the /usr/tmp directory.
+create a file called \textit{sh} in the \textit{/usr/tmp} directory.
 
 Autonamously teaming up, researchers had discovered how to stop the Morris
 Worm in just one day. Over the next several
@@ -113,7 +104,5 @@ days, the Morris worm was eradicated. ``By Tuesday, November 8, most machines ha
 and traffic patterns had returned to near normal.''\cite{spafford_internet_1989-1}
 
 By early Friday, November $4^{th}$, researchers had disassembled the worm's
-code 
-\cite{spafford_crisis_1989}
-\cite{seeley_tour_1989}.
+code\cite{spafford_crisis_1989}\cite{seeley_tour_1989}.
 Several surprises were in store for those performing the autopsy.
