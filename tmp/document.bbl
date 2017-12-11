@@ -55,12 +55,13 @@ C.~D. Marsan, ``Morris worm turns 20: {Look} what it's done,'' \emph{Network
   World}, Oct. 2008.
 
 \bibitem{spafford_crisis_1989}
-E.~H. Spafford, ``Crisis and aftermath,'' \emph{Communications of the ACM},
+{E. H. Spafford}, ``Crisis and aftermath,'' \emph{Communications of the ACM},
   vol.~32, no.~6, pp. 678--687, 1989.
 
 \bibitem{spafford_internet_1989}
-------, ``The {Internet} worm program: {An} analysis,'' \emph{ACM SIGCOMM
-  Computer Communication Review}, vol.~19, no.~1, pp. 17--57, 1989.
+{Spafford, Eugene H.}, ``The {Internet} worm program: {An} analysis,''
+  \emph{ACM SIGCOMM Computer Communication Review}, vol.~19, no.~1, pp. 17--57,
+  1989.
 
 \bibitem{adams_controlling_1996}
 J.-A.~M. Adams, ``Controlling cyberspace: applying the computer fraud and abuse
@@ -76,7 +77,7 @@ D.~Fisher, ``Living with worms, viruses, and daily security alerts,''
   \emph{eWeek}, vol.~19, no.~6, p.~20, Feb. 2002.
 
 \bibitem{fisher_code_2001}
-------, ``Code {Red} worm exposes security flaws.'' \emph{eWeek}, vol.~18,
+{D. Fisher}, ``Code {Red} worm exposes security flaws.'' \emph{eWeek}, vol.~18,
   no.~29, p.~1, Jul. 2001.
 
 \bibitem{berghel_code_2001}

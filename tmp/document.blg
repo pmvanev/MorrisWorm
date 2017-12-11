@@ -26,7 +26,7 @@ Warning--string name "november" is undefined
 Done.
 You've used 22 entries,
             4087 wiz_defined-function locations,
-            946 strings with 9782 characters,
+            949 strings with 9830 characters,
 and the built_in function-call counts, 14875 in all, are:
 = -- 1317
 > -- 205
@@ -34,7 +34,7 @@ and the built_in function-call counts, 14875 in all, are:
 + -- 120
 - -- 29
 * -- 691
-:= -- 2437
+:= -- 2439
 add.period$ -- 46
 call.type$ -- 22
 change.case$ -- 22
@@ -43,7 +43,7 @@ cite$ -- 22
 duplicate$ -- 1136
 empty$ -- 1168
 format.name$ -- 32
-if$ -- 3434
+if$ -- 3432
 int.to.chr$ -- 0
 int.to.str$ -- 22
 missing$ -- 174

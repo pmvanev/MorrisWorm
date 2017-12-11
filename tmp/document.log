@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.24)  11 DEC 2017 10:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.24)  11 DEC 2017 11:05
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -979,11 +979,11 @@ ne 1.
 (./Incubation.aux) (./Outbreak.aux) (./Autopsy.aux) (./Convalescence.aux)
 (./Evolution.aux) (./PostMortem.aux)) ) 
 Here is how much of TeX's memory you used:
- 9536 strings out of 494910
- 146856 string characters out of 6179836
+ 9538 strings out of 494910
+ 146880 string characters out of 6179836
  322537 words of memory out of 5000000
  12397 multiletter control sequences out of 15000+600000
- 98880 words of font info for 151 fonts, out of 8000000 for 9000
+ 99009 words of font info for 152 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  47i,12n,52p,797b,372s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-
@@ -997,7 +997,7 @@ lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf
 pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/
 type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb
 >
-Output written on document.pdf (30 pages, 289506 bytes).
+Output written on document.pdf (30 pages, 289423 bytes).
 PDF statistics:
  151 PDF objects out of 1000 (max. 8388607)
  106 compressed objects within 2 object streams
